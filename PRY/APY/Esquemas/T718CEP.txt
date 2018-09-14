@@ -1,0 +1,13 @@
+DAF_T718CEP_PCS = DAF_T718CEP_UDO.select(
+    DAF_T718CEP_UDO.value.substr(1,9).alias('CLI-RUT'),
+    DAF_T718CEP_UDO.value.substr(10,1).alias('CLI-RUT-DV'),
+    DAF_T718CEP_UDO.value.substr(11,9).alias('EJC-RUT'),
+    DAF_T718CEP_UDO.value.substr(20,1).alias('EJC-RUT-DV'),
+    DAF_T718CEP_UDO.value.substr(21,8).alias('CEP-FEC-CRE'),
+    DAF_T718CEP_UDO.value.substr(29,8).alias('CEP-FEC-TER'),
+    DAF_T718CEP_UDO.value.substr(37,12).alias('CEP-ORG-DTO'),
+    DAF_T718CEP_UDO.value.substr(49,1).alias('CRM-EST-VCA'),
+    DAF_T718CEP_UDO.value.substr(50,9).alias('CEP-USR-ACT-NRT'),
+    DAF_T718CEP_UDO.value.substr(59,1).alias('CEP-USR-ACT-DRT'),
+    DAF_T718CEP_UDO.value.substr(60,8).alias('CEP-FEC-ACT')
+)

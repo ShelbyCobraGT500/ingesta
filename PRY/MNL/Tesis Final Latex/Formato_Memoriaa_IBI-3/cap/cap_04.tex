@@ -1,0 +1,122 @@
+\chapter{MATERIALES Y MÉTODOS}
+
+
+
+\section{Materiales}
+Los materiales utilizados para el desarrollo de esta tesis fueron:
+
+\subsection{Software}
+Los softwares que fueron utilizados para el desarrollo de esta memoria fueron los siguientes:
+
+\begin{enumerate}
+	\item[a.]IntaRNA (http://rna.informatik.uni-freiburg.de/IntaRNA/Input.jsp)
+	
+	\item[b.]StarPicker (http://ccb.bmi.ac.cn/starpicker/prediction.php)
+	
+	\item[c.]TargetRNA2 (http://cs.wellesley.edu/~btjaden/TargetRNA2/)
+	
+	\item[d.]RNA Predator (http://nibiru.tbi.univie.ac.at/cgi-bin/RNApredator/target\_search.cgi)
+	
+	\item[e.]Cytoscape (Descargar desde: http://www.cytoscape.org/download.php)
+	
+	\item[f.]MEME Suite (http://meme-suite.org/)
+	
+	\item[g.]RNAfold WebServer (http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi)
+	
+	\item[h.]MySQL Workbench (Descarga desde: https://dev.mysql.com/downloads/workbench/)
+	
+	\item[i.]WampServer (Descarga desde: http://www.wampserver.com/en/)
+	
+	\item[j.]JEMBOSS(Descarga desde: http://emboss.sourceforge.net/Jemboss/)
+	
+	\item[k.]GraphPad Prism 6
+	
+	\item[l.]Microsoft Excel
+	
+\end{enumerate}
+\subsection{Bases de Datos}
+Las bases de datos que fueron utilizadas para el desarrollo de esta memoria fueron las siguientes:
+
+\begin{enumerate}
+	\item[a.]sRNATarBase (http://ccb.bmi.ac.cn/srnatarbase/)
+	
+	\item[b.]BSRD (http://www.bac-srna.org/BSRD/index.jsp)
+	
+\end{enumerate}
+
+\subsection{Hardware}
+El Hardware que fue utilizado para el desarrollo de esta memoria fueron los siguientes:
+
+\begin{enumerate}
+	\item[a.]Alienware 17R2: Memoria RAM: 16 GB DDR3; Procesador: Intel Core i7-4720HQ; Almacenamiento: 128 GB SSD y 1 TB HDD; GPU: Nvidia Gforce GTX980M 4GB GDDR5.
+	
+	\item[b.]RedFox: Memoria RAM: 8GB DDR3; Procesador: Intel Core i5 CPU 650; Almacenamiento: 1TB HDD.
+	
+	\item[c.]VAIO VPCL225FL: Memoria RAM 6GB DDR3; Procesador Intel Core i7-2630QM; Almacenamiento: 1 TB HDD; GPU: Nvidia Gforce GT 540M 4GB GDDR3
+\end{enumerate}
+
+\subsection{Scripts}
+
+\begin{enumerate}
+	\item[a.]Para la realización del cálculo de adaptación al pool de tRNA se utilizó el script PTAI.py desarrollado en lenguaje Python [31] y para el cálculo de la adaptación al uso codogénico se utilizó el script 	PCAI.py desarrollado en lenguaje Python [26].
+	
+	\item[b.]Para dividir la secuencia codificante en 5'-CDS, CDS-M y CDS-3' se utilizó el script Contador\_Carac.py desarrollado en lenguaje Python.
+\end{enumerate}
+
+\section{Metodología}
+
+\subsection{Identificación mediante búsqueda bibliográfica de las parejas de sRNAs y mRNAs que interaccionan entre sí en \textit{Escherichia coli}}
+
+\subsubsection{4.3.1.1. Construcción de base de datos.}
+Para la construcción de la base de datos se utilizaron los datos ya existentes de las bases de datos sRNATarBase y BSRD, de las cuales se extrajo: ID, Nombre del sRNA, nombre del mRNA target, efecto (represión o inducción), secuencia del sRNA, secuencia del mRNA y el código DOI del artículo que hace referencia al estudio del sRNA.
+
+\subsection{Predicción e identificación de las regiones de interacción entre mRNA y sRNA}
+
+\subsubsection{4.2.2.1. Identificar las regiones de interacción entre mRNA y sRNA}
+
+Para identificar y predecir las regiones de interacción de las interacciones no caracterizadas se utilizó el programa IntaRNA\footnote{http://rna.informatik.uni-freiburg.de/IntaRNA/Input.jsp}. Se ajustaron los parámetros de entrada, de tal manera de utilizar una semilla equivalente a un tamaño de 7 bases\cite{Liu2010}. Se almacenó en la base de datos anteriormente creada la energía de interacción, la ubicación de la interacción del mRNA con el sRNA, la posición de la semilla del sRNA y la posición de la semilla del mRNA.
+
+\subsubsection{4.2.2.2. Predecir regiones de interacción mRNA-sRNA}
+
+Para la predicción de las regiones de interacción se utilizó el programa RNA Predator. Se ingresó la especie bacteriana a la cual pertenece el sRNA al cual es objeto de la predicción de la interacción con los posibles mensajeros. Una vez que se obtuvieron las predicciones de cada uno de ellos se eligieron 2 interacciones con las energías más bajas. Posteriormente,? las interacciones se almacenaron en la base de datos.
+
+\subsubsection{4.2.2.3. Perfiles de interacción sRNA-mRNA.}
+
+Para la creación de zonas en los sRNAs lo primero que se hizo fue crear perfiles de interacción sRNA-mRNA. Para poder lograr esto se necesitó el largo del sRNA y la posición de la interacción del mensajero con el sRNA que se estaba perfilando. Teniendo estos datos se procedió a utilizarlos en el script llamado Matriz\_suma.cpp, el cual crea la matriz en donde el largo de esta matriz corresponde al tamaño del sRNA y el ancho la cantidad de mensajeros que interaccionaban con él. Una vez obtenida la matriz se procedió a sumar los datos de interacción sRNA-mRNA, para posteriormente graficarlos dando como resultado un gráfico de perfiles en donde se identificaban las zonas de los sRNA donde ocurrían interacciones y las zonas en donde no ocurrían interacciones.
+
+\subsubsection{4.2.2.4. Cálculo de la densidad de interacción en las regiones de los mensajeros}
+
+Para calcular la densidad de las diferentes regiones de los mensajeros se dividió la razón de las interacciones (interacciones que ocurren en una zona específica / total de interacciones), por el tamaño de la zona que esta siendo analizada, y este valor fue multiplicado por 1000, de esta manera se obtuvo la densidad de las interacciones.
+
+\subsection{Caracterización de la adaptación al repertorio de tRNA de los genes regulados por sRNA y de sus regiones de interacción}
+
+\subsubsection{4.2.3.1. Determinación de la Adaptación al repertorio de tRNA }
+
+La adaptación al repertorio de tRNA se determinó mediante el cálculo de tAI (tRNA Adaptation Index), para este cálculo se aplicó el script PTAI.py sobre el archivo que contiene las secuencias de los cDNAs en formato FASTA. Se registró el output del archivo (valor de tAI) asociado al identificador del gen. Posteriormente se agregó esta información a la base de datos.
+La adaptación del repertorio de tRNA sobre la región de interacción se determinó mediante el cálculo de tAI de la región de hibridación, para esto se completaron los codones que faltaban para hacer coincidir los aminoácidos con los de la secuencia codificante completa, a continuación, se aplicó el script PTAI.py sobre el archivo que contenía las secuencias de las regiones de interacción de los mensajeros en formato FASTA. Se registró el output del archivo (valor de tAI) asociado al identificador del gen. Posteriormente se agregó esta información a la base de datos.
+
+La adaptación del repertorio de tRNA sobre las zonas del área codificante (5'-CDS, CDS-M, CDS-3') de los mensajeros que interaccionan con sRNAs se determinó mediante el cálculo de tAI de las zonas mencionadas anteriormente, para la realización de este cálculo se tomó la secuencia codificante, la cual mediante el uso de un script llamado Contador\_Carac.py dividió la zona codificante en las tres zonas mencionadas anteriormente. Una vez dividida la secuencia codificante en las 3 zonas se aplicó el script PTAI.py sobre los archivos que contenían las secuencias de cada una de las zonas del área codificante en formato FASTA. Se registraron los outputs de los archivos (valores de tAI) asociados a los identificadores de los genes. Posteriormente se agregó esta información a la base de datos.
+
+La adaptación al repertorio de tRNA en las zonas del área codificante (5'-CDS, CDS-M, CDS-3') para los mensajeros que no interaccionan con sRNAs se determinó mediante el cálculo de tAI de las zonas mencionadas anteriormente, para la realización de este cálculo se tomaron todos los mensajeros de \textit{Escherichia coli} K-12 MG1655 se eliminaron los mensajeros que interaccionaban con sRNAs, una vez eliminados estos mensajeros se utilizó el script llamado Contador\_Caract.py, el cual dividió la zona codificante en las 3 zonas mencionadas anteriormente. Una vez dividida la secuencia codificante en las 3 zonas se aplicó el script PTAI.py sobre los archivos que contenían las secuencias de cada una de las zonas del área codificante en formato FASTA. Se registraron los outputs de los archivos (valores de tAI) asociados a los identificadores de los genes.
+
+\subsubsection{4.2.3.2. Determinación de la adaptación al uso codogénico}
+
+La determinación de la adaptación al uso codogénico se realizó mediante el cálculo de CAI (Codon Adaptation Index), para este cálculo se utilizó el software llamado JEMBOSS y su módulo llamado CAI, este se configuró para calcular el CAI de \textit{Escherichia coli} K-12 MG1655 (E. coli) sobre el archivo en el que estaban contenidos los cDNA en formato FASTA. Se registró el output de JEMBOSS (valor de CAI) asociado al identificador del gen. Posteriormente se agregaron los datos obtenidos a la base de datos.
+
+La determinación de la adaptación al uso codogénico sobre la región de interacción se determinó mediante el cálculo de CAI de la zona de hibridación sRNA-mRNA, se realizó de manera similar al cálculo de tAI para esta región, pero utilizando el módulo CAI del software JEMBOSS, configurándolo para calcular el CAI de \textit{Escherichia coli} K-12 MG1655 (E. coli) sobre el archivo en el que estaban contenidas las secuencias de las regiones de interacción de los mensajeros en formato FASTA. 
+
+La determinación de la adaptación al uso codogénico sobre las zonas del área codificante (5'-CDS, CDS-M, CDS-3') tanto de los mensajeros que interaccionan con sRNAs como aquellos que no, se determinó de forma similar al cálculo de tAI para estas regiones, pero esta vez usando el software JEMBOSS, configurado para calcular el valor de CAI de \textit{Escherichia coli} K-12 MG1655 (Eecoli). Posteriormente, para cada conjunto de datos se registró el output de JEMBOSS (valor de CAI) asociado al identificador del gen.
+
+\subsubsection{4.2.3.3. Identificación de diferencias significativas entre los distintos resultados de CAI y tAI}
+
+Para la identificación de diferencias significativas se hicieron comparaciones entre pares de conjunto de valores por medio del software GraphPad Prism 6 el cual por medio de los analisis estadisticos Mann-Whitney no pareado y Mann-Whitney pareado. Se definío si el conjunto de valores era significativamente diferente al par estudiado. Una vez obtenidos estos resultados se procedió a tabularlos para realizar las comparaciones entre los valores de uso codogénico y adaptación al tRNA de los mensajeros que presentan interacción con sRNA con los valores de uso codogénico y adaptación al tRNA de los mensajeros que no presentan interacción con sRNAs.
+
+\subsubsection{4.2.3.4. Identificación de regiones significativas (motivos) entre los mensajeros que interaccionan con los sRNAs}
+
+Para la identificación de motivos comunes entre los mensajeros que interaccionan con un mismo sRNAs, se utilizó el software MEME \cite{CaldonazzoGarbelini2018}. Para esto se comparó exclusivamente las regiones de interacción mRNA-sRNA localizadas en todos los RNA mensajero que interactuaban con un mismo sRNA. Se consideró como un motivo válido, aquel que presentara un valor p $\leq$ 0,01
+
+\subsection{Generación de un mapa de interacciones sRNA-mRNA que incluya la adaptación del repertorio de tRNA y uso codogénico del gen completo }
+
+\subsubsection{4.2.4.1. Generación de red de interacción}
+
+Para la generación de la red de interacción biológica se utilizó el software Cytoscape de manera local\footnote{http://www.cytoscape.org/download.php}, por medio de la generación de un archivo en formato SIF, en el cual están contenidos los datos de la interacción sRNA-mRNA, junto con los datos de relevancia biológica en los que encontramos el valor de tAI, el valor de CAI, el efecto de la interacción (represión, represión predicha, inducción, inducción predicha).

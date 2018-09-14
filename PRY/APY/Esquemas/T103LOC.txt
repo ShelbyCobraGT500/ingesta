@@ -1,0 +1,8 @@
+df_T103LOC = df_a.select(
+    df_a.value.substr(1,5).alias('LOC-COD-R'),
+    df_a.value.substr(6,2).alias('LOC-IDR-VGT-R'),
+    df_a.value.substr(8,40).alias('LOC-NOM-R'),
+    df_a.value.substr(48,10).alias('LOC-NOM-CRT-R'),
+    df_a.value.substr(58,3).alias('LOC-COD-COM-R'),
+    df_a.value.substr(61,7).alias('LOC-POS-COD-R'),
+)

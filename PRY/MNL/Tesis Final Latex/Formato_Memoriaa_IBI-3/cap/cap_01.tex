@@ -1,0 +1,114 @@
+\chapter{MARCO TEÓRICO}
+
+\section{Introducción}
+
+\subsection{Presentación del problema}
+
+La traducción del mensaje genético es un complejo proceso biológico encargado de transformar la información genética contenida en el mRNA en proteína, el cual depende directamente de la disponibilidad de los tRNA aminoacilados, la cantidad de ribosomas disponibles y el nivel de expresión de los mRNA. Durante este proceso, la traducción de los mRNAs puede ser regulada por RNAs pequeños no codificantes (small RNA o sRNA), modificando su eficiencia traduccional. Se define eficiencia de traducción como la cantidad de proteínas producidas por mRNA en un periodo de tiempo determinado\cite{Novoa2012}. Actualmente se han descrito sRNAs en 783 especies bacterianas diferentes\cite{Li}. En \textit{Escherichia coli} cepa K-12 MG1655 se han identificado 108 sRNAs\cite{Li} los cuales regulan diversos procesos metabólicos\cite{Riley2006}. A pesar de que el mecanismo por el cual los sRNA regulan la expresión génica es bien conocido, no es claro por qué algunos mRNA interactúan con los sRNA y otros no. Muchos sRNA interactúan en regiones codificantes de los mRNA por lo cual, propiedades que dependen de la composición nucleotídica de las regiones codificantes como el contenido GC o el sesgo en el uso de codones podrían estar relacionados con la regulación por sRNAs. Como el sesgo en el uso de codones también está relacionado con la adaptación al pool de tRNAs disponibles en la célula, es factible suponer que ambos tipos de regulación de la eficiencia traduccional pudiesen estar relacionados entre sí. En esta memoria de título se propuso integrar la información relacionada a la regulación de la traducción de los sRNA sobre los mensajeros en \textit{Escherichia coli} K-12 MG1655 por medio de la identificación y visualización de la red de interacción sRNA-mRNA, junto con evaluaciones estadísticas de la adaptación de codones al pool de los tRNAs presentes en la célula. De esta manera se logró observar que en \textit{E. coli} K-12 MG1655, los genes regulados por sRNA, no existe una preferencia de uso codogénico diferente a los genes no regulados por sRNA. Sin embargo, en los sitios de interacción sRNA-mRNA que se encuentran en la región codificante del mRNA, se observó un uso preferencial de codones de alta frecuencia, pero con baja disponibilidad de tRNAs.
+
+
+\section{Marco teórico}
+\subsection{RNAs pequeños}
+
+Los RNA pequeños (small RNA o sRNA), son un tipo de ARN que no codifica para proteínas (ncRNA), altamente estructurados, y de un tamaño que varía entre 40 a 400 nucleótidos\cite{Lai2015}. Los sRNA son producidos por bacterias, entre las que encontramos, especies de \textit{Salmonella typhimurium}\cite{Viegas2007}, \textit{Escherichia coli}\cite{Viegas2008}, \textit{Pseudomonas aeruginosa}\cite{Livny2006}, \textit{Pseudomonas fluorescens}\cite{Song2015}, \textit{Staphylococcus aureus}\cite{Carroll2016}, entre otras. En \textit{Escherichia coli} K-12 MG1655 se han identificado 108 sRNAs de los cuales 32 forman interacciones con mRNA que han sido caracterizadas por métodos empíricos\cite{Li}. En contraste, existen otros 76 sRNAs en los cuales se desconoce sus blancos de interacción o la forma en la cual interactuan con los genes que regulan.
+
+Los sRNA regulan la traducción de ciertos genes, marcan algunas proteínas para su degradación y modulan la actividad de la RNA polimerasa\cite{Windbichler2008}. De acuerdo al mecanismo por el cual regulan la expresión génica, los sRNA se pueden dividir en dos grupos: los que se alinean con hebras de ARN (Unión completaría) con la finalidad de afectar la estabilidad del mRNA y su traducción, y los que se unen a proteínas afectando su función\cite{Viegas2008}.
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=.67\textwidth]{imagenes/Imagen1.png}}
+		\caption[Ejemplos de sRNA en \textit{Escherichia coli} y \textit{Salmonella typhimurium}]{En la figura se muestra la estructura secundaria de los sRNA DsrA\cite{Lease2000}, OxyS\cite{Altuvia1997}, GcvB\cite{Sharma2007}, RyhB\cite{Geissmann2004}, y RybB\cite{Bouvier2008}. Las estructuras secundarias que se visualizan en la imagen están basadas en experimentos \textit{in vitro}}
+	\end{centering}	
+\end{figure}
+
+Los sRNA bacterianos además de poseer diferentes tamaños, pueden adoptar diversas estructuras secundarias de tipo tallo-bucle, las cuales están separadas por regiones de hebra simple extendida (Figura 1.1).
+
+Los sRNAs actúan como reguladores de la expresión génica en respuesta a condiciones de estrés como: los cambios de temperatura\cite{Sledjeski1996}, bajas concentraciones de hierro\cite{Masse2002}, estrés oxidativo\cite{Altuvia1997}, variaciones en las concentración de glucosa\cite{Moller2002,Papenfort2008} y altos niveles de glucosa-6-fosfato [20].
+
+La presencia de diversos sRNAs regulando varias rutas metabólicas sugiere la existencia de una red de interacción que permite la regulación coordinada de varios procesos metabólicos. En el año 2011 Gisela Stortz y cols.\cite{Storz2011}, identificaron por primera vez en \textit{Escherichia coli} una red de interacción sRNA-mRNA utilizando los 20 sRNA descritos hasta esa fecha. En esta red se observan ocho grupos en los cuales se puede apreciar que el sRNA MicF coordina tanto el metabolismo de aminoácidos, como el trasporte de membrana y el metabolismo del hierro. El descubrimiento de nuevos sRNA y la caracterización de sus blanco, además de sus efectos sobre su expresión ha llevado a determinar que los sRNA establecen circuitos de regulación que, frente a cambios en las condiciones ambientales, permiten cambios más rápidos y estables en la expresión génica que la regulación mediada por factores transcripcionales \cite{Nitzan2017}
+
+Actualmente, de los 108 sRNAs determinados en \textit{Escherichia coli}, 32 sRNAs tienen determinado mediante métodos empíricos, tanto el blanco mRNA blanco como el sitio de interacción. En 64 sRNAs se ha determinado el mRNA blanco, sin embargo se desconoce el sitio de interacción, mientras que en 12 sRNA no se conoce su blanco de interacción. Los 96 sRNAs con blancos conocidos forman un total de al menos 412 interacciones sRNA-mRNA. 
+
+\subsection{RNA mensajero (mRNA)}
+
+\subsubsection{1.2.2.1 mRNA en el proceso de traducción y la adaptación al uso de codones y al pool de tRNA.}
+
+El RNA mensajero (mRNA) es un tipo de ARN, que tiene por finalidad transportar la información genética desde el ADN a los sitios donde se sintetizan proteínas a partir de esta información (ribosomas) (Figura 1.2).
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=.67\textwidth]{imagenes/Imagen2.png}}
+		\caption[Flujo de la información genética desde el DNA a proteínas]{\textbf{\textit{Flujo de la información genética desde el ADN a proteínas}}. La figura esquematiza los pasos de síntesis de mRNA en el proceso de transcripción, y posterior proceso de traducción. Los tRNA actúan como moléculas adaptadoras que mediante complementariedad con los codones presentes en los mRNA van descodificando la información genética permitiendo la síntesis de proteínas en los ribosomas.}
+	\end{centering}	
+\end{figure}
+
+Del total de ARN celular solo un pequeño porcentaje (entre el 15\% y 20\%) es ARN mensajero, el cual puede ser leído por varios ribosomas simultáneamente. En el proceso de traducción, el mRNA es decodificado en los ribosomas por los tRNAs. Cada tRNA reconoce mediante complementariedad de bases un triplete de nucleótidos denominado codón, a través de su anti-codón. Existen 64 codones distintos, de los cuales 61 codifican para aminoácidos y tres corresponden a señales que permiten detener el proceso de traducción\cite{Chevance2014}. El código genético es conservado, sin embargo cada aminoácido puede estar codificado por uno o varios codones.
+
+Los codones que codifican para el mismo aminoácido se denominan sinónimos y su distribución no es aleatoria, existiendo codones que se utilizan más frecuentemente que otros. Este sesgo es propio de cada organismo, y de cada gen\cite{Watson2013}. Uno de los factores del cual depende la traducción de proteínas es la disponibilidad o abundancia de los tRNA cargados con los respectivos aminoácidos (aminoacil-tRNA) y que tienen la función de decodificar los codones presentes en el mRNA. En muchos organismos los codones más frecuentemente utilizados también son aquellos decodificados por los tRNAs que presentan un mayor nivel de expresión o un mayor número de copias génicas\cite{Watson2013}. Los genes que más se expresan también tienden a utilizar el conjunto de codones más abundantemente representados en el genoma y con mayor disponibilidad de tRNAs, de tal manera de hacer más eficiente su proceso de traducción\cite{Watson2013}. El grado de adaptación de un gen al conjunto de codones más utilizado en un organismos puede ser determinada mediante el uso de indicadores, como el índice de adaptación codogénica o CAI por sus siglas en inglés\cite{Husain1987}. Los valores de CAI de un gen pueden ser calculados a partir de su secuencia codificante y la frecuencia de uso de codones que existe en cada organismo. El uso codogénico para \textit{Escherichia coli} y varios organismos se encuentran tabulados y son de libre disposición, así como los algoritmos que sirven para el cálculo de CAI. Por otra parte, la adaptación al pool de tRNA puede ser evaluada mediante el cálculo del índice de adaptación al repertorio de tRNA (tRNA Adaptation Index o tAI)\cite{DosReis2004}. Los valores de tAI también pueden ser determinados a partir de la secuencia codificante, pero necesitan una estimación de la expresión de los tRNAs presentes en el organismo. Esta estimación puede ser inferida a partir del número de copias de genes de tRNA\cite{Tello2013} o a partir de la cuantificación de la expresión de los tRNA por RNAseq u otra técnica. Para \textit{Escherichia coli} se cuenta con ambos tipos de información\cite{Hershberg2003}.
+
+\subsubsection{1.2.2.2 Relación entre sRNAs, adaptación al uso codogénico y repertorio de tRNA}
+
+Los sRNAs interactúan con el mRNA tanto en regiones codificantes como también en los extremos 5' UTR o 3' UTR. Hasta el momento se desconoce la relación existente entre la interacción sRNA-mRNA con la adaptación al uso de codones o al repertorio de tRNA presente en un organismo. A pesar de esto, existen varias razones que permiten suponer que tal relación existe:
+
+\begin{enumerate}
+	\item En las regiones codificantes si la interacción del sRNA con el mRNA dependiera también de los codones presentes, mutaciones sinónimas podrían alterar la regulación por sRNAs (modificando su unión al mRNA) y la adaptación al repertorio de tRNA.
+	
+	\item Una mayor adaptación al repertorio de tRNAs, permite una traducción más eficiente, por lo tanto, se requiere una menor cantidad de mRNA para producir una mayor cantidad de proteína. Dado que los genes con alta adaptación al repertorio de tRNAs corresponden a genes constitutivos, los cuales no son regulados en su expresión, es factible pensar que los genes regulados por sRNA tengan valores de adaptación al repertorio de tRNA en un rango intermedio, o muy bajo
+\end{enumerate}
+
+Las identificaciones de estas relaciones se pueden apreciar mediante la construcción de redes de interacción que combinen tanto la información de interacción sRNA-mRNA, adaptación al uso codogénico, y adaptación al repertorio de tRNAs. Si, además estas redes de interacción también incluyeran la información sobre la red metabólica que es regulada, permitiría apreciar de mejor manera la interacción entre sRNAs y el uso de codones presentes en un gen.
+
+\subsection{Redes de Interacción}
+
+Las redes de interacción representan relaciones entre 2 objetos de un sistema, comúnmente se utiliza para estudiar sistemas complejos en muchas disciplinas, como por ejemplo las ciencias de la computación, ciencias sociales y la biología. En biología los nodos pueden representar diferentes tipos de relaciones, como por ejemplo interacciones físicas entre las proteínas, genes o metabolitos o regulación de la expresión génica\cite{Su2011}.
+
+Las redes de interacción pueden ser generadas a partir de un conocimiento previo, como también por medio de la deducción a partir de los datos experimentales. Existen muchos repositorios en línea que contienen información para la identificación de redes de interacción, por ejemplo, KEGG (\textbf{Kyoto Encyclopedia of Genes and Genomes}), BIND (\textbf{Biomolecular Interaction Network Database}) \cite{Bader2003}, y HPRD (\textbf{Human Protein Reference Database}) \cite{Peri2004}, en las cuales están almacenas una gran cantidad de información, la cual puede ser integrada y representada como una red para posteriormente ser analizada. Para poder identificar y visualizar estas redes de interacción existen distintos softwares por ejemplo cytoscape\cite{Ono2014} el cual tiene la capacidad de crear redes de interacción a partir de datos provistos por el usuario, los cuales pueden proceder de una base de datos como también datos ingresados manualmente por el usuario.
+
+\subsection{Cytoscape}
+
+Cytoscape es el programa de código abierto más popular que es utilizado para la exploración visual de las redes biológicas que pueden ser formadas por proteínas genes u otros tipos de interacciones. Escrito en su mayoría en el lenguaje de programación java, la primera versión apareció en 2003\cite{Ono2014} y ofreció a los investigadores una interfaz de visualización que permite cargar, visualizar, buscar, filtrar y guardar redes, siendo una herramienta versátil e interactiva, útil para explorar interconexiones biológicas complejas con el apoyo de diversas aplicaciones\cite{Su2011}. Esto facilita la realización de tareas de investigación, tales como la predicción de función de genes.
+
+\subsubsection{1.2.4.1 Arquitectura y funcionalidad del núcleo}
+
+El eje central del software Cytoscape son los gráficos de redes, en donde las especies moleculares están representadas como nodos y las interacciones moleculares se representan como enlaces, los cuales también son conocidos como las aristas entre los nodos. La funcionalidad básica que proporciona el núcleo del programa Cytoscape consta de la integración de datos arbitrarios en la gráfica, en la representación visual del gráfico y la interfaz de métodos externos al software que son implementados como paquetes de expansión\cite{Shannon2003}.
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=.67\textwidth]{imagenes/Imagen3.png}}
+		\caption[Esquema de la arquitectura y núcleo de Cytoscape]{Esquema de la arquitectura y núcleo de Cytoscape}
+	\end{centering}	
+\end{figure}
+
+El eje principal de Cytoscape es la llamada ventana de Cytoscape (Cytoscape Windows), en la cual están contenidos los datos y sus atributos para representar los gráficos de red, además de operar los métodos básicos, como por ejemplo: la edición gráfica, el diseño gráfico, el mapeo de atributos visuales y el filtrado\cite{Shannon2003}. Cuando se requiere hacer una interpretación que no está soportada por Cytoscape se utilizan los paquetes de expansión, los cuales mediante una implementación de algoritmos mejoran la funcionalidad del programa. Estos algoritmos que expanden la funcionalidad del programa son descargables desde Cytoscape App Store (http://apps.cytoscape.org/)\cite{Shannon2003}. Cytoscape además nos da la posibilidad de almacenar todas las anotaciones, provenientes de un servidor independiente, las cuales son almacenadas en el módulo llamado Anotaciones (Annotation + Thesaurus Server) (Figura 1.3).
+
+Además de los módulos mencionados anteriormente, también existen otros más en los que encontramos por ejemplo el módulo llamado Maquinaria Gráfica (Layout Engines), el cual permite visualizar las redes en una disposición jerárquica (Figura 1.4.A), de resorte (Figura 1.4.C), o circular (Figura 1.4.B)\cite{Shannon2003}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=1\textwidth]{imagenes/Imagen4.png}}
+		\caption[Representaciones de Cytoscape 3]{\textbf{Representaciones de Cytoscape 3}. La figura muestra la representación jerárquica (A) en donde hay un nodo que actúa como raíz y los nodos siguientes son considerados como nodos hijos, en donde estos nodos hijos también pueden actuar como nodo raíz o nodo padre, Disposición Circular (B) y la disposición en resorte (C).}
+	\end{centering}	
+\end{figure}
+
+También podemos encontrar un módulo llamado Mapeo Visual (Visual Mapper), el cual está encargado de la forma y el tamaño de los nodos como por ejemplo el color del borde, el grosor y el estilo, en la cual se le asigna estas características a un atributo de datos dependiendo si es un atributo continuo o discreto (Figura 1.5)\cite{Shannon2003}.
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=.45\textwidth]{imagenes/Imagen5.png}}
+		\caption[Ventana de Cytoscape]{Ventana de Cytoscape donde se ajustan los detalles visuales de los atributos, como por ejemplo el color del nodo}
+	\end{centering}	
+\end{figure}
+
+\subsection{Justificación del Problema}
+
+Dado que algunas interacciones sRNA-mRNA ocurran en regiones codificantes, es factible pensar que la regulación por sRNA y la adaptación a la disponibilidad del repertorio de tRNAs están estrechamente relacionadas. Hasta el momento se desconoce si ambos tipos de regulación de la expresión génica pueden actuar en forma independiente o están relacionados. La comprensión de la relación entre ambos mecanismos de regulación podría ser fundamental en el área de la ingeniería metabólica para el diseño racional de microorganismos genéticamente modificados, con aplicaciones biotecnológicas o biomédicas.

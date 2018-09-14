@@ -1,0 +1,21 @@
+DAF_T118DEM_PCS = DAF_T118DEM_UDO.select(
+    DAF_T118DEM_UDO.value.substr(1,9).alias('DEM-RUT-CLI'),
+    DAF_T118DEM_UDO.value.substr(10,1).alias('DEM-RUT-CLI-DV'),
+    DAF_T118DEM_UDO.value.substr(11,50).alias('DEM-NOM-FAN'),
+    DAF_T118DEM_UDO.value.substr(61,1).alias('DEM-TIP-SCD'),
+    DAF_T118DEM_UDO.value.substr(62,14).alias('DB2-RID'),
+    DAF_T118DEM_UDO.value.substr(76,150).alias('DEM-NOM-LAR'),
+    DAF_T118DEM_UDO.value.substr(226,8).alias('DEM-FEC-CNS'),
+    DAF_T118DEM_UDO.value.substr(234,3).alias('DEM-CIU-CNS'),
+    DAF_T118DEM_UDO.value.substr(237,8).alias('DEM-FEC-VCA'),
+    DAF_T118DEM_UDO.value.substr(245,5).alias('DEM-NUM-EMD'),
+    DAF_T118DEM_UDO.value.substr(250,5).alias('DEM-NUM-ADS'),
+    DAF_T118DEM_UDO.value.substr(255,1).alias('DEM-CCT-LUB-MIC'),
+    DAF_T118DEM_UDO.value.substr(256,1).alias('DEM-ETG-SER-MIC'),
+    DAF_T118DEM_UDO.value.substr(257,14).alias('DEM-SLI-PMD'),
+    DAF_T118DEM_UDO.value.substr(271,8).alias('DEM-FEC-MDF-ESC'),
+    DAF_T118DEM_UDO.value.substr(279,1).alias('DEM-RED-EMP'),
+    DAF_T118DEM_UDO.value.substr(280,50).alias('DEM-NOM-ABR'),
+    DAF_T118DEM_UDO.value.substr(330,8).alias('DEM-FEC-ACT-ESC'),
+    DAF_T118DEM_UDO.value.substr(338,1).alias('DEM-ORG-DTO-ESC')
+)

@@ -1,0 +1,241 @@
+\begin{thebibliography}{10}
+
+\bibitem{Altuvia1997}
+Shoshy Altuvia, Dalit Weinstein-Fischer, Aixia Zhang, Lisa Postow, and Gisela
+  Storz.
+\newblock {A small, stable RNA induced by oxidative stress: Role as a
+  pleiotropic regulator and antimutator}.
+\newblock {\em Cell}, 90(1):43--53, 1997.
+
+\bibitem{Bader2003}
+Gary~D. Bader, Doron Betel, and Christopher~W.V. Hogue.
+\newblock {BIND: The Biomolecular Interaction Network Database}.
+\newblock {\em Nucleic Acids Research}, 31(1):248--250, 2003.
+
+\bibitem{Bouvier2008}
+Marie Bouvier, Cynthia~M. Sharma, Franziska Mika, Knud~H. Nierhaus, and
+  J{\"{o}}rg Vogel.
+\newblock {Small RNA Binding to 5 mRNA Coding Region Inhibits Translational
+  Initiation}.
+\newblock {\em Molecular Cell}, 32(6):827--837, 2008.
+
+\bibitem{CaldonazzoGarbelini2018}
+Jader~M. {Caldonazzo Garbelini}, Andr{\'{e}}~Y. Kashiwabara, and Danilo~S.
+  Sanches.
+\newblock {Sequence motif finder using memetic algorithm}.
+\newblock {\em BMC Bioinformatics}, 19(1):4, 2018.
+
+\bibitem{Cao2010}
+Yuan Cao, Jiayao Wu, Qian Liu, Yalin Zhao, Xiaomin Ying, Lei Cha, Ligui Wang,
+  and Wuju Li.
+\newblock {sRNATarBase: a comprehensive database of bacterial sRNA targets
+  verified by experiments.}
+\newblock {\em RNA (New York, N.Y.)}, 16(11):2051--7, 2010.
+
+\bibitem{Carroll2016}
+Ronan~K Carroll, Andy Weiss, William~H Broach, Richard~E Wiemels, Austin~B
+  Mogen, Kelly~C Rice, and N~Shaw.
+\newblock {Analysis of Regulatory or Small RNA Gene Expression in
+  Staphylococcus aureus}.
+\newblock 7(1):1--13, 2016.
+
+\bibitem{Chevance2014}
+Fabienne F~V Chevance, Soazig {Le Guyon}, and Kelly~T. Hughes.
+\newblock {The Effects of Codon Context on In Vivo Translation Speed}.
+\newblock {\em PLoS Genetics}, 10(6), 2014.
+
+\bibitem{DosReis2004}
+Mario dos Reis, Renos Savva, and Lorenz Wernisch.
+\newblock {Solving the riddle of codon usage preferences: A test for
+  translational selection}.
+\newblock {\em Nucleic Acids Research}, 32(17):5036--5044, 2004.
+
+\bibitem{Geissmann2004}
+Thomas~A Geissmann and Dani{\`{e}}le Touati.
+\newblock {Hfq, a new chaperoning role: binding to messenger RNA determines
+  access for small RNA regulator.}
+\newblock {\em The EMBO journal}, 23(2):396--405, 2004.
+
+\bibitem{Hershberg2003}
+Ruth Hershberg, Shoshy Altuvia, and Hanah Margalit.
+\newblock {A survey of small RNA-encoding genes in Escherichia coli}.
+\newblock {\em Nucleic Acids Research}, 31(7):1813--1820, 2003.
+
+\bibitem{Husain1987}
+Intisar Husain, Aziz Sancar, and Chapel Hill.
+\newblock {The codon adaptation index - a measure of directional synonymous
+  codon usage bias and its potential application}.
+\newblock 15(3):1281--1295, 1987.
+
+\bibitem{Kanehisa2016}
+Minoru Kanehisa, Yoko Sato, and Kanae Morishima.
+\newblock {BlastKOALA and GhostKOALA: KEGG Tools for Functional
+  Characterization of Genome and Metagenome Sequences}.
+\newblock {\em Journal of Molecular Biology}, 428(4):726--731, 2016.
+
+\bibitem{Lai2015}
+Daniel Lai and Irmtraud~M Meyer.
+\newblock {A comprehensive comparison of general RNA-RNA interaction prediction
+  methods.}
+\newblock {\em Nucleic acids research}, page 1477, 2015.
+
+\bibitem{Lease2000}
+R~a Lease and M~Belfort.
+\newblock {A trans-acting RNA as a control switch in Escherichia coli: DsrA
+  modulates function by forming alternative structures.}
+\newblock {\em Proceedings of the National Academy of Sciences of the United
+  States of America}, 97(18):9919--9924, 2000.
+
+\bibitem{Li}
+Leo~Lei Li.
+\newblock {Bacterial Small Regulatory RNA Database}.
+
+\bibitem{Liu2010}
+Jane~M. Liu and Andrew Camilli.
+\newblock {A broadening world of bacterial small RNAs}.
+\newblock {\em Current Opinion in Microbiology}, 13(1):18--23, 2010.
+
+\bibitem{Livny2006}
+Jonathan Livny, Anja Brencic, Stephen Lory, and Matthew~K. Waldor.
+\newblock {Identification of 17 Pseudomonas aeruginosa sRNAs and prediction of
+  sRNA-encoding genes in 10 diverse pathogens using the bioinformatic tool
+  sRNAPredict2}.
+\newblock {\em Nucleic Acids Research}, 34(12):3484--3493, 2006.
+
+\bibitem{Masse2002}
+Eric Mass{\'{e}} and Susan Gottesman.
+\newblock {A small RNA regulates the expression of genes involved in iron
+  metabolism in Escherichia coli.}
+\newblock {\em Proceedings of the National Academy of Sciences of the United
+  States of America}, 99(7):4620--4625, 2002.
+
+\bibitem{Moller2002}
+Thorleif Moller, Thomas Franch, Peter Hojrup, Douglas~R. Keene, Hans~Peter
+  Bchinger, Richard~G. Brennan, and Poul Valentin-Hansen.
+\newblock {Hfq: A Bacterial Sm-like protein that mediates RNA-RNA interaction}.
+\newblock {\em Molecular Cell}, 9(1):23--30, 2002.
+
+\bibitem{Nitzan2017}
+Mor Nitzan, Rotem Rehani, and Hanah Margalit.
+\newblock {Integration of Bacterial Small RNAs in Regulatory Networks}.
+\newblock {\em Annual Review of Biophysics}, 46(1):131--148, 2017.
+
+\bibitem{Novoa2012}
+Eva~Maria Novoa and Llus {Ribas de Pouplana}.
+\newblock {Speeding with control: Codon usage, tRNAs, and ribosomes}.
+\newblock {\em Trends in Genetics}, 28(11):574--581, 2012.
+
+\bibitem{Ono2014}
+Keiichiro Ono, Barry Demchak, and Trey Ideker.
+\newblock {Cytoscape tools for the web age: D3.js and Cytoscape.js exporters.}
+\newblock {\em F1000Research}, 3:143, 2014.
+
+\bibitem{Papenfort2008}
+Kai Papenfort, Verena Pfeiffer, Sacha Lucchini, Avinash Sonawane, J.~C~D
+  Hinton, and J{\"{o}}rg Vogel.
+\newblock {Systematic deletion of Salmonella small RNA genes identifies CyaR, a
+  conserved CRP-dependent riboregulator of OmpX synthesis}.
+\newblock {\em Molecular Microbiology}, 68(4):890--906, 2008.
+
+\bibitem{Peri2004}
+S.~Peri.
+\newblock {Human protein reference database as a discovery resource for
+  proteomics}.
+\newblock {\em Nucleic Acids Research}, 32(90001):497D--501, 2004.
+
+\bibitem{Riley2006}
+Monica Riley, Takashi Abe, Martha~B. Arnaud, Mary K~B Berlyn, Frederick~R.
+  Blattner, Roy~R. Chaudhuri, Jeremy~D. Glasner, Takashi Horiuchi, Ingrid~M.
+  Keseler, Takehide Kosuge, Hirotada Mori, Nicole~T. Perna, Guy Plunkett,
+  Kenneth~E. Rudd, Margrethe~H. Serres, Gavin~H. Thomas, Nicholas~R. Thomson,
+  David Wishart, and Barry~L. Wanner.
+\newblock {Escherichia coli K-12: A cooperatively developed annotation snapshot
+  - 2005}.
+\newblock {\em Nucleic Acids Research}, 34(1):1--9, 2006.
+
+\bibitem{Shannon2003}
+Paul Shannon, Andrew Markiel, Owen Ozier, Nitin~S Baliga, Jonathan~T Wang,
+  Daniel Ramage, Nada Amin, Benno Schwikowski, and Trey Ideker.
+\newblock {Cytoscape : A Software Environment for Integrated Models of
+  Biomolecular Interaction Networks}.
+\newblock (Karp 2001):2498--2504, 2003.
+
+\bibitem{Sharma2007}
+Cynthia~M. Sharma, Fabien Darfeuille, Titia~H. Plantinga, and J{\"{o}}rg Vogel.
+\newblock {A small RNA regulates multiple ABC transporter mRNAs by targeting
+  C/A-rich elements inside and upstream of ribosome-binding sites}.
+\newblock {\em Genes and Development}, 21(21):2804--2817, 2007.
+
+\bibitem{Sledjeski1996}
+D~D Sledjeski, a~Gupta, and S~Gottesman.
+\newblock {The small RNA, DsrA, is essential for the low temperature expression
+  of RpoS during exponential growth in Escherichia coli.}
+\newblock {\em The EMBO journal}, 15(15):3993--4000, 1996.
+
+\bibitem{Smirnov2017}
+Alexandre Smirnov, Chuan Wang, Lisa~L Drewry, and J{\"{o}}rg Vogel.
+\newblock {Molecular mechanism of mRNA repression in trans by a
+  ProQ dependent small RNA}.
+\newblock {\em The EMBO Journal}, 36(8):1029--1045, 2017.
+
+\bibitem{Song2015}
+Chunxu Song, Menno van~der Voort, Judith van~de Mortel, Karl~A. Hassan, Liam
+  D~H Elbourne, Ian~T. Paulsen, Joyce~E. Loper, and Jos~M. Raaijmakers.
+\newblock {The Rsm regulon of plant growth-promoting Pseudomonas fluorescens
+  SS101: Role of small RNAs in regulation of lipopeptide biosynthesis}.
+\newblock {\em Microbial Biotechnology}, 8(2):296--310, 2015.
+
+\bibitem{Storz2011}
+Gisela Storz, J{\"{o}}rg Vogel, and Karen~M. Wassarman.
+\newblock {Regulation by Small RNAs in Bacteria: Expanding Frontiers}.
+\newblock {\em Molecular Cell}, 43(6):880--891, 2011.
+
+\bibitem{Su2011}
+Gang Su, John~H. Morris, Barry Demchak, and Gary~D. Bader.
+\newblock {\em {Biological Network Exploration with Cytoscape 3}}, volume~72.
+\newblock 2011.
+
+\bibitem{Tello2013}
+Mario Tello, Francisco Vergara, and Eugenio Spencer.
+\newblock {Genomic adaptation of the ISA virus to Salmo salar codon usage.}
+\newblock {\em Virology journal}, 10(1):223, 2013.
+
+\bibitem{Tuller2010}
+Tamir Tuller, Asaf Carmi, Kalin Vestsigian, Sivan Navon, Yuval Dorfan, John
+  Zaborske, Tao Pan, Orna Dahan, Itay Furman, and Yitzhak Pilpel.
+\newblock {An evolutionarily conserved mechanism for controlling the efficiency
+  of protein translation}.
+\newblock {\em Cell}, 141(2):344--354, 2010.
+
+\bibitem{Updegrove2015}
+Taylor~B Updegrove, Svetlana~A Shabalina, and Gisela Storz.
+\newblock {How do base-pairing small RNAs evolve ?}
+\newblock (March):379--391, 2015.
+
+\bibitem{Viegas2007}
+Sandra~C. Viegas, Verena Pfeiffer, Alexandra Sittka, Ines J. Silva, J{\"{o}}rg
+  Vogel, and Cec{\'{i}}lia~M. Arraiano.
+\newblock {Characterization of the role of ribonucleases in Salmonella small
+  RNA decay}.
+\newblock {\em Nucleic Acids Research}, 35(22):7651--7664, 2007.
+
+\bibitem{Viegas2008}
+Sandra~Cristina Viegas and Cec{\'{i}}lia~Maria Arraiano.
+\newblock {Regulating the regulators: How ribonucleases dictate the rules in
+  the control of small non-coding RNAs}.
+\newblock {\em RNA biology}, 5(4):230--243, 2008.
+
+\bibitem{Watson2013}
+James~D. Watson, Tania~A. Baker, Stephen~P. Bell, Alexander Gann, Michael
+  Levine, and Richard Losik.
+\newblock {\em {Molecular biology of the gene}}.
+\newblock 2013.
+
+\bibitem{Windbichler2008}
+Nikolai Windbichler, Frederike von Pelchrzim, Oliver Mayer, Edina Csaszar, and
+  Ren{\'{e}}e Schroeder.
+\newblock {Isolation of small RNA-binding proteins from E. coli: evidence for
+  frequent interaction of RNAs with RNA polymerase}.
+\newblock {\em RNA biology}, 5(1):30--40, 2008.
+
+\end{thebibliography}

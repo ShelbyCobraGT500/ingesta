@@ -1,0 +1,8 @@
+DAF_T118SMA_PCS = DAF_T118SMA_UDO.select(
+    DAF_T118SMA_UDO.value.substr(1,9).alias('CLI-RUT'),
+    DAF_T118SMA_UDO.value.substr(10,1).alias('CLI-RUT-DV'),
+    DAF_T118SMA_UDO.value.substr(11,4).alias('SMA-ANO-CLS'),
+    DAF_T118SMA_UDO.value.substr(15,2).alias('SMA-MES-CLS'),
+    DAF_T118SMA_UDO.value.substr(17,2).alias('SMA-DIA-CLS'),
+    DAF_T118SMA_UDO.value.substr(19,2).alias('SGM-ATI-COD')
+)

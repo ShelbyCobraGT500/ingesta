@@ -1,0 +1,16 @@
+df_T103COM = df_a.select(
+    df_a.value.substr(1,3).alias('COM-COD-R'),
+    df_a.value.substr(4,2).alias('COM-IDR-VGT-R'),
+    df_a.value.substr(6,40).alias('COM-NOM-R'),
+    df_a.value.substr(46,10).alias('COM-NOM-CRT-R'),
+    df_a.value.substr(56,5).alias('COM-COD-INE-R'),
+    df_a.value.substr(61,2).alias('COM-COD-RGN-R'),
+    df_a.value.substr(63,2).alias('COM-IDR-REQ-CIU-R'),
+    df_a.value.substr(65,3).alias('COM-COD-CIU-R'),
+    df_a.value.substr(68,7).alias('COM-DDD-R'),
+    df_a.value.substr(75,20).alias('COM-GLS-CIU-R'),
+    df_a.value.substr(95,7).alias('COM-COD-POS-R'),
+    df_a.value.substr(102,3).alias('PVD-PVC-COD-R'),
+    df_a.value.substr(105,5).alias('COM-DOF-COD-R'),
+    df_a.value.substr(110,1).alias('COM-CAL-COD-R'),
+)

@@ -1,0 +1,794 @@
+\chapter{Resultados}
+
+\section{OE1: Identificación mediante búsqueda en las bases de datos de las parejas de sRNAs y mRNA en \textit{Escherichia coli} K-12 MG1655.}
+
+A partir de los datos obtenidos desde sRNATarBase y BSRD, se obtuvieron un total de 96 sRNAs que interaccionaban con 304 mensajeros formando un total de 412 interacciones sRNA-mRNA, en la figura 6 se muestra un resumen de los datos obtenidos de ambas bases de datos:
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=.64\textwidth]{imagenes/Imagen6.png}}
+		\caption[Resumen de datos BSRD y SRNATarBase]{Resumen de datos obtenidos a partir de las bases de datos sRNATarBase y BSRD}
+	\end{centering}	
+\end{figure}
+
+De estas 412 interacciones, el 28,6\% (118) de ellas correspondió a interacciones donde se conocía tanto la identidad del sRNA como del mRNA, además del sitio de interacción sRNA-mRNA. El restante 71,3\% (294) correspondió a interacciones donde sólo se conocía la identidad del sRNA y mRNA que interactuaban. El primer conjunto de interacciones se denominó <<interacciones caracterizadas>> mientras el segundo se denominó interacciones <<no caracterizadas>>.
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=.85\textwidth]{imagenes/Imagen7.png}}
+		\caption[Distribución de Interacciones no caracterizadas versus Interacciones Caracterizadas]{Distribución de Interacciones no caracterizadas versus Interacciones Caracterizadas, de color naranja encontramos las interacciones no caracterizadas, que corresponden al 71,30\% (294 interacciones) y de color azul se encuentran las interacciones caracterizadas con un 28,64\% (118 interacciones). }
+	\end{centering}	
+\end{figure}
+
+A continuación, se muestran las interacciones sRNA-mRNA extraídas desde las bases de datos utilizadas:
+
+\begin{longtable}{|c|c|l|c|}
+		\hline
+		\textbf{N°}&\textbf{sRNA} & \textbf{mRNA} & \textbf{Fuente} \\ \hline
+		1&tpke11 & ompX; proA & BSRD \\ \hline
+		2&sokC & hokC; mokC & BSRD \\ \hline
+		3&nc9 & No posee Interacciones Caracterizadas & BSRD \\ \hline
+		4&sroA & gslM; maeA; & BSDR \\ \hline
+		5&sgrS & \begin{tabular}[c]{@{}l@{}}rpoS; ptsG; sodB; hns; ompA; dppA; \\ompF; ompC\end{tabular} & BSRD \\ \hline
+		6&tp2 & livJ;rplP & BSRD \\ \hline
+		7&tff & bssS; yihA & BSRD \\ \hline
+		8&c0067 & No posee Interacciones Caracterizadas & BSRD \\ \hline
+		9&eyeA & minC; yibQ & BSRD \\ \hline
+		10&nc1 & No posee Interacciones Caracterizadas & BSRD \\ \hline
+		11&sroB & agaV; chbC & BSRD \\ \hline
+		12&ipeX & proV; rzoQ & BSRD \\ \hline
+		13&sokE & cobB; menE & BSRD \\ \hline
+		14&sroC & carB; sodC & BSRD \\ \hline
+		15&rybA & sucA; yoeI & BSRD \\ \hline
+		16&rybB & \begin{tabular}[c]{@{}l@{}}ompC; ompS; pagC; yaeC; fadL; tsx;\\ ompN; ompF; fiu; ompA; ompW\end{tabular} & BSRD; sRNATarBase \\ \hline
+		17&psrD & proP; yahK & BSRD \\ \hline
+		18&c0293 & uidC; yceJ & BSRD \\ \hline
+		19&dicF & ftsZ & BSRD; sRNATarBase \\ \hline
+		20&nc10 & No posee Interacciones Caracterizadas & BSRD \\ \hline
+		21&c0299 & No posee Interacciones Caracterizadas & BSRD \\ \hline
+		22&rdlA & frdC; hybC & BSRD \\ \hline
+		23&rdlB & atoC; ybjG & BSRD \\ \hline
+		24&rdlC & atoC; ybjG & BSRD \\ \hline
+		25&nc3 & No posee Interacciones Caracterizadas & BSRD \\ \hline
+		26&rttR & mokC; xapR & BSRD \\ \hline
+		27&nc7 & No posee Interacciones Caracterizadas & BSRD \\ \hline
+		28&mcaS & csgD; flhD & BSRD; sRNATarBase \\ \hline
+		29&fnrS & \begin{tabular}[c]{@{}l@{}}sodA; sodB; metE; folX; gpmA; folE;\\ yobA; maeA; cydD; narK\end{tabular} & BSRD; sRNATarBase \\ \hline
+		30&c0343 & fliY; yjjP & BSRD \\ \hline
+		31&micC & \begin{tabular}[c]{@{}l@{}}ompC; sodB; hns; ptsG; ompA; dppA;\\ ompF; galK \end{tabular} & BSRD; sRNATarBase \\ \hline
+		32&rydC & yejA & BSRD; sRNATarBase \\ \hline
+		33&sokB & hokB; mokB & BSRD; sRNATarBase \\ \hline
+		34&c0362 & creB; fliE & BSRD \\ \hline
+		35&mgrR & insA; ynjD & BSRD \\ \hline
+		36&dicF & ftsZ & BSRD \\ \hline
+		37&rydB & acrA; ppiC & BSRD \\ \hline
+		38&rprA & rpoS; sodB; ompA; ompC; ompF; hns & BSRD; sRNATarBase \\ \hline
+		39&sroD & ampC; ulaB & BSRD \\ \hline
+		40&ryeA & ydgI; ygeV & BSRD \\ \hline
+		41&ryeB & rpoS & BSRD \\ \hline
+		42&ryeF & psuT; rcsC & BSRD \\ \hline
+		43&c0465 & argD; mscL & BSRD \\ \hline
+		44&isrB & rffC; ycJO & BSRD \\ \hline
+		45&dsrA & \begin{tabular}[c]{@{}l@{}}hns; rbsD; argR; ilvI; rpoS; ptsG;\\ ompA; ompC; ompF; galK\end{tabular} & BSRD; sRNATarBase \\ \hline
+		46&rseX & ompA; ompC & BSRD; sRNATarBase \\ \hline
+		47&isrC & tmcA; yqaE & BSRD \\ \hline
+		48&sibA & apaG; xylF & BSRD \\ \hline
+		49&ryeC & mtn; yaeR & BSRD \\ \hline
+		50&sibB & Fbp; xylF & BSRD \\ \hline
+		51&ryeD & rseP; yhhK & BSRD \\ \hline
+		52&cyaR & luxS; yqaE; nadE; ompX & BSRD; sRNATarBase \\ \hline
+		53&micF & \begin{tabular}[c]{@{}l@{}}ompF; hns; ptsG; ompA; ompC; dppA;\\ galK \end{tabular} & BSRD; sRNATarBase \\ \hline
+		54&tpke70 & mnmA; nlpC & BSRD \\ \hline
+		55&sroE & fdhD; phoP & BSRD \\ \hline
+		56&c0614 & gltX; rmA & BSRD \\ \hline
+		57&is128 & Kup; trmL & BSRD \\ \hline
+		58&ryfA & ascG; napB & BSRD \\ \hline
+		59&glmY & glmS & BSRD; sRNATarBase \\ \hline
+		60&ryfB & yaeI; yeeJ & BSRD \\ \hline
+		61&ryfC & gltD; ycjZ & BSRD \\ \hline
+		62&ryfD & mprA; yfbS & BSRD \\ \hline
+		63&ssrA & smpB & BSRD \\ \hline
+		64&sraD & tsx; lamB; ompX; ompA; phoP & BSRD; sRNATarBase \\ \hline
+		65&c0664 & sucC; ytfR & BSRD \\ \hline
+		66&sokX & Frr; ybaQ & BSRD \\ \hline
+		67&csrB & csrA & BSRD; sRNATarBase \\ \hline
+		68&gcvB & \begin{tabular}[c]{@{}l@{}}cycA; sstT; ilvE; ybdH; oppA; dppA;\\ ndK; brnQ; argT; gdhA; thrL; livK;\\ yaeC; gltI; sstT; iciA; serA; livJ;\\ livC; lrp; sodB; dksA; hns; ptsG; \\ ompA; ompC; ompF\end{tabular} & BSRD; sRNATarBase \\ \hline
+		69&omrA & \begin{tabular}[c]{@{}l@{}}flhD; flhC; fecA; btuB; glmM; folP;\\ fepA; cirA; ompT; gntP; fecD; csgD;\\ lit; gmhB; deoR; nadA; glcD; uup;\\ clpB; yccS; cydD; ybdC; hisM; folA; \\ yadD; sufD; mipA; ybcS; ygjN; yhbE;\\ csiE; xylH; hokD; fdoI; yeaZ; yfbT;\\ rumA; yzgL; narH; yrfC; yadL; cheZ;\\ malK; yaeP; ssuC; hokB; ydhT; ompA; \\ fmF; csgB; osmB; ybeT;\end{tabular} & BSRD; sRNATarBase \\ \hline
+		70&omrB & \begin{tabular}[c]{@{}l@{}}fecA; glmM; folP; gntP; csgD; ykfI;\\ ypdD; yaeH; b2680; yaiY; yphD; trxC;\\ ybjE; fldA; yjhl; srlB; mutM; ybhT;\\ ykgJ; yeeE; yhdN; ompA; fimF; csgB; \\ osmB; ybeT; fepA; csgD\end{tabular} & BSRD; sRNATarBase \\ \hline
+		71&invR & ompC & BSRD \\ \hline
+		72&ssrS & sspA & BSRD \\ \hline
+		73&sibC & kduD; menH & BSRD \\ \hline
+		74&rygC & kduD; menH & BSRD \\ \hline
+		75&c0719 & appB; rbbA & BSRD \\ \hline
+		76&sroG & pgI; ulaR & BSRD \\ \hline
+		77&rygD & rfbB; sufD; ybaS; yqjE & BSRD \\ \hline
+		78&sibB & Fbp; xylF & BSRD \\ \hline
+		79&rygE & yeaE; yjaZ; ypdI & BSRD \\ \hline
+		80&sibE & stpA & BSRD \\ \hline
+		81&psrN & fadH; tnaC & BSRD \\ \hline
+		82&nc4 & No posee Interacciones Caracterizadas & BSRD \\ \hline
+		83&psrO & caiA; garL & BSRD \\ \hline
+		84&sraH & sdaC; STM3216; tpx & BSRD \\ \hline
+		85&ryhB & \begin{tabular}[c]{@{}l@{}}iscS; fur; sdhD; sodB; acnA; fumA;\\ shiA; bfr; ftn; sucB; sucC; sucD;\\ gltA; mdh; icd; ybjG; yagT; perM;\\ yadS; kdpA; citG; yagJ; sugE; yheF; \\ motA; pinH; ygeZ; ynfF; yiaM; yegK;\\ ygiQ; ydaN; ykgE; yecD; metH; proA;\\ metI; ygiT; hns; ompA; ompC; ompF;\\ galK; ptsG\end{tabular} & BSRD; sRNATarBase \\ \hline
+		86&arrS & hofC; msyB & BSRD \\ \hline
+		87&gadY & gadX & BSRD, sRNATarBase \\ \hline
+		88&nc8 & No posee Interacciones Caracterizadas & BSRD \\ \hline
+		89&rdlD & ldrD & BSRD, sRNATarBase \\ \hline
+		90&sokA & corA; galK & BSRD \\ \hline
+		91&istR-1, istR2 & tisB & BSRD, sRNATarBase \\ \hline
+		92&glmZ & glmS & BSRD, sRNATarBase \\ \hline
+		93&glmY & glmS & BSRD \\ \hline
+		94&esre & cynT; thiM & BSRD \\ \hline
+		95&spot42 & \begin{tabular}[c]{@{}l@{}}nanC; glpF; xylF; caiA; atoD; galK;\\ fucI; puuE; ybbW; paaK; gltA; nanT;\\ fucP; srlAM; sthA; ascF; sucC; ompA;\\ ompC; ompF; hns; dppA; sodB\end{tabular} & BSRD; sRNATarBase \\ \hline
+		96&csrC & csrA & BSRD; sRNATarBase \\ \hline
+		97&oxyS & \begin{tabular}[c]{@{}l@{}}rpoS; yobF; fhlA; tolA; tolB; tolR;\\ yeaK; yfdH; dppD; rpmG; gfcB; fabB;\\ ybbB; yccE; yheN; pmbA; moaD; yeaC\end{tabular} & BSRD; sRNATarBase \\ \hline
+		98&p26 & abgA; rcnA & BSRD \\ \hline
+		99&sroH & gntX; pitB & BSRD \\ \hline
+		100&sraL & rlmA; ycjU & BSRD \\ \hline
+		101&ryjA & No posee Interacciones Caracterizadas & BSRD \\ \hline
+		102&nc5 & No posee Interacciones Caracterizadas & BSRD \\ \hline
+		103&ryjB & cdgR; ydbK & BSRD \\ \hline
+		104&nc6 & No posee Interacciones Caracterizadas & BSRD \\ \hline
+		105&symR & symE & BSRD; sRNATarBase \\ \hline
+		106&sraA & idyK; prpR & BSRD \\ \hline
+		107&ffs& bcsA; ymgD &BSRD \\ \hline
+		108& nc2 &No posee Interacciones Caracterizadas & BSRD \\ \hline
+		\caption{sRNAs y sus blancos presentes en la bases de datos BSRD (Bacterial Small Regulatory RNA Database) o en la base de datos sRNATarBase.}
+\end{longtable}
+
+\section{OE2: Identificación y predicción de las regiones de interacción entre mRNA y sRNA.}
+
+\subsection{Predicción de los blancos de los sRNAs sin interacción identificada.}
+
+Los resultados anteriores mostraron que existían 12 sRNA cuyos blancos de interacción no estaban identificados (sRNA huérfanos). Para completar nuestra base de datos se decidió identificar los posibles blancos para estos sRNA huérfanos. Para esto se utilizó el software \textbf{RNAPredator}\footnote{http://nibiru.tbi.univie.ac.at/cgi-bin/RNApredator/target\_search.cgi}. De los sitios de interacción obtenidos por el programa, para cada sRNA solo se consideraron los dos mRNA blancos que mostraron una interacción más favorable (menores valores de energía libre de Gibbs) (Tabla 5.2). 
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|l|}
+		\hline
+		\textbf{N°}&\textbf{sRNA} & \textbf{Blanco} \\ \hline
+		1&b1574 & \textit{dedA (-17,39 Kcal/mol), ymdF (-23.29 Kcal/mol)} \\ \hline
+		2&nc1 & \textit{intF (-145,85 Kcal/mol), livM (-19,15 Kcal/mol)} \\ \hline
+		3&nc2 & \textit{fepB (-26,12 Kcal/mol), ybdD (-22,93 Kcal/mol)} \\ \hline
+		4&nc3 & \textit{cysA (-19,54 Kcal/mol), narX (-40,05 Kcal/mol)} \\ \hline
+		5&nc4 & \textit{tdcB (-38,6 Kcal/mol), uhpT (-22.28 Kcal/mol)} \\ \hline
+		6&nc5 & \textit{flgG (-31,04 Kcal/mol), uhpT (-41,74 Kcal/mol)} \\ \hline
+		7&nc6 & \textit{dkgA (-18,82 Kcal/mol), yjiN (-37,95 Kcal/mol)} \\ \hline
+		8&nc7 & \textit{fabI (-43,68 Kcal/mol), melR (-25,86 Kcal/mol)} \\ \hline
+		9&nc8 & \textit{astE (-24,5 Kcal/mol), rnpA (-22,9 Kcal/mol)} \\ \hline
+		10&nc9 & \textit{chaA (-24,04 Kcal/mol), tdcC (-22,83 Kcal/mol)} \\ \hline
+		11&nc10 & \textit{ymfL (-9,16 Kcal/mol), ymfM (-7,14 Kcal/mol)} \\ \hline
+		12&SsrA & \textit{smpB (-10,50 Kcal/mol)}\\ \hline
+	\end{tabular}
+	\caption{La tabla muestra los resultados de predicción de los blancos de los sRNAs huérfanos, junto con la predicción de su energía de interacción sRNA-mRNA.}
+\end{table}
+
+\subsection{Identificación de las regiones de interacción sRNA-mRNA blanco.}
+
+El análisis anterior mostró que existían 298 interacciones en las cuales no se encontraba caracterizada la región de interacción sRNA-mRNA blanco. Para predecir estas regiones de interacción se utilizó el software IntaRNA, escogiendo la interacción de menor energía libre de Gibbs. Los resultados mostraron que las energías de interacciones predichas estuvieron en un rango de entre -24,65 kcal/mol y 13,66 kcal/mol con una media de -9,84 kcal/mol. Estos resultados son comparables a los observados en las energías de las interacciones validadas empíricamente las cuales presentan un rango que va desde -72,62 kcal/ml a 76,70 kcal/mol, con una media de 9,82 kcal/mol. 
+
+De esta manera, nuestra base de datos quedó conformada por 435 interacciones, caracterizadas en su región de unión sRNA-mRNA blanco por métodos empíricos (118; 27,1\%) y bioinformáticos (317; 72,8\%) (Figura 5.3).
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=.85\textwidth]{imagenes/Imagen8.png}}
+		\caption[Porcentaje de interacciones predichas y empíricas en \textit{E. coli.}]{Porcentaje de interacciones predichas y empíricas en \textit{E. coli.}}
+	\end{centering}	
+\end{figure}
+
+Las interacciones sRNA-mRNA blanco pueden ocurrir en distintas regiones del mensajero, 5'-UTR, región codificante, y la zona 3'-UTR. Por el mecanismo de regulación de la expresión génica de los sRNA sobre los mensajeros, la mayor parte de las interacciones empíricamente validadas ocurre en la región 5'-UTR o en el inicio de la traducción. Para averiguar si esto también ocurre en las regiones de interacción predichas, se procedió a clasificar las interacciones de acuerdo a su zona de interacción en el mRNA blanco. Los resultados muestran que las regiones predichas se localizan mayormente en el área codificante, luego vienen las interacciones en la región 5'-UTR. Es interesante destacar que el 30,1\% de las interacciones en la zona codificante se localiza en los primeros 150 nucleótido (5'-CDS) (ver tabla 3). Esta región ha sido definida como una rampla traduccional donde existe un incremento progresivo en la adaptación al uso codogénico, permitiendo un incremento gradual de la velocidad de avance del ribosoma\cite{Tuller2010}.
+
+\begin{table}[H]
+	\centering
+	\resizebox{15cm}{!}{
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\textbf{Zona} & \textbf{\begin{tabular}[c]{@{}c@{}}Interacciones \\ empíricas\end{tabular}}& \textbf{\begin{tabular}[c]{@{}c@{}}Interacciones\\ predichas\end{tabular}} & \textbf{Total} \\ \hline
+		5' UTR &31& 38 & 69 \\ \hline
+		5'UTR - CDS & 34 & 33 & 67 \\ \hline
+		5'- CDS & 17& 72 & 89 \\ \hline
+		5'-CDS - CDS-M & 1 & 8 & 9 \\ \hline
+		CDS-M & 25&  157 & 182 \\ \hline
+		CDS-3' & 1 & 2 & 3 \\ \hline
+		3'UTR & 4 & 12 & 16 \\ \hline
+		\textbf{Total}&113&322&435\\ \hline
+	\end{tabular}
+	}
+	\caption{Distribución de las interacciones por zonas del mensajero}
+\end{table}
+
+La presencia de un mayor número de interacciones en la zona codificante del mRNA blanco, podría ser resultado del mayor tamaño de esta zona respecto a las otras regiones. Para evaluar esta posibilidad se calculó la densidad de interacciones por región del mensajero, dividiendo el número de interacciones por la cantidad de interacciones totales y por el tamaño de la zona donde interactúa el sRNA (Sección 4.3.2.3 de Materiales y Métodos). Los resultados muestran que en las interacciones determinadas mediante métodos empíricos la mayor densidad se encuentra en la zona 5'UTR-CDS con un valor de 1,9 interacciones/base (Tabla 5.4). En las interacciones predichas la zona 5' UTR-CDS mostró un valor de densidad similar con 1,49 interacciones/base, sin embargo, en las interacciones localizadas en la región codificante las interacciones predichas mostraron una probabilidad 57 veces mayor. Lo que se ve reflejado en que el 48,8\% de las interacciones predicha se localizó en esta región (Tabla 5.4).
+
+\begin{table}[H]
+	\centering
+	\resizebox{16cm}{!}{
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\textbf{Zona} & \textbf{\begin{tabular}[c]{@{}c@{}}Densidad de Interacciones \\ empíricas (Razón/Tamaño \\ zona*1000)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Densidad de Interacciones \\ Predichas (Razón/Tamaño\\  zona*1000)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Razón \\ (DIP/DIE)\end{tabular}} \\ \hline
+		5' UTR & 5,42 & 2,33 & 0,43 \\ \hline
+		5' UTR - CDS & 13,55 & 5,20 & 0,38 \\ \hline
+		5'- CDS & 1,92 & 1,47 & 0,76 \\ \hline
+		5'-CDS - CDS-M & 8,05 & 1,26 & 0,15 \\ \hline
+		CDS-M & 0,009 & 0,56 & 57,69 \\ \hline
+		CDS-3' & 7,62 & 0,21 & 0,02 \\ \hline
+		3'UTR & 0,16 & 0,75 & 4,46 \\ \hline
+	\end{tabular}
+	}
+	\caption{Densidad de interacción en las diferentes regiones del mRNA.}
+\end{table}
+
+Como se puede apreciar en la Tabla 5.4 para el caso de las interacciones empíricas e interacciones predichas de las zonas 5'-CDS, presentan una probabilidad de interacción similar pues las densidades de interacción son muy similares. Este resultado es distinto al observado en la zona CDS-M donde se obtuvo valores de densidad más altos para las interacciones predichas, esto a pesar de ser normalizado por el tamaño de la región de interacción y por la cantidad de interacciones predichas.
+
+\subsection{5.2.3. Funciones biológicas reguladas por sRNA.}
+
+Para identificar las funciones biológicas de los mRNA blancos regulados por sRNA se utilizó la herramienta BLASTKOALA\cite{Kanehisa2016}. BLASTKOALA es una herramienta para identificar funciones biológicas a partir de un set secuencias aminoácidicas, el cual puede clasificar en 18 tipos funciones biológicas (como por ejemplo: Familia de enzimas, procesamiento de la información genética, procesos celulares, etc). Primero se analizaron los mRNA regulados por sRNA cuyas interacciones no han sido predichas por medio de RNAPredator (Un total de 303 mensajeros). De estos, BLASTKOALA permitió asignar una función biológica a 284 mRNAs. La mayor cantidad de mensajeros regulados por sRNA están relacionados con el procesamiento de la información ambiental (108), y en segundo lugar se encuentran los mensajeros relacionados a procesos celulares (48) (Figura 5.4)
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=.9\textwidth]{imagenes/Imagen9.png}}
+		\caption[Funciones biológicas de los mRNAs regulados por sRNA]{Funciones biológicas de los mRNAs regulados por sRNA. La figura muestra los procesos biológicos de E. coli regulados por sRNA, así como la cantidad de mensajeros regulados en cada uno de estos procesos. }
+	\end{centering}	
+\end{figure}
+
+En el caso de los mensajeros obtenidos por medio de predicciones bioinformáticas (24 mensajeros), estos participan en 9 proceso biológicos. La función biológica encargada del procesamiento de la información ambiental también presentó la mayor cantidad de mensajeros, con un total de 8 (equivalente al 36,36\% de los nuevos blancos identificados), en segundo lugar, con un total de 4, encontramos los mensajeros que no clasifican en alguna función biológica (equivalente a un 18,18\% de los nuevos blancos identificados), en tercer lugar se encuentran el metabolismo de aminoácidos, el metabolismo de energía y los procesos celulares con un total de 2 mensajeros por cada una de estas funciones (equivalentes a un 9,09\% para cada una de estas funciones biológicas).
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=.9\textwidth]{imagenes/Imagen10.png}}
+		\caption[Funciones biológicas de los mRNAs regulados por sRNA e identificados por métodos bioinformáticos]{\textbf{Funciones biológicas de los mRNAs regulados por sRNA e identificados por métodos bioinformáticos} La figura muestra los posibles procesos biológicos de \textit{E. coli} regulados por sRNA sin un blanco identificados por algún método empírico, y el número de mensajeros regulados en cada uno de estos procesos. }
+	\end{centering}	
+\end{figure}
+
+\subsection{5.2.4. Localización de sitios de interacción sRNA-mRNA en los sRNAs}
+
+En \textit{E.coli} los sRNAs pueden interactuar con uno o varios mRNA blanco. Para determinar si en los sRNA que interactúan con múltiples blancos existe un patrón común de interacción se utilizó un análisis matricial en el cual se asignó un valor de 1 a la posición del sRNA equivalente al nucleótido que interactúa con el mRNA, y un valor de 0 en el caso contrario. Este análisis se aplicó a los sRNAs que interactúan con al menos 4 mRNAs diferentes y permitió obtener un mapa de frecuencia de interacción sRNA-mRNA a lo largo del sRNA. Se logró identificar un total 16 sRNA con al menos 4 interacciones, siendo OmrA el sRNA con mayor número de blancos. Al graficar el número de interacciones por cada nucleótido del sRNA (perfil de interacción) se observó que las interacciones no se distribuían homogéneamente a lo largo del sRNA, sino más bien existían zonas con mayor abundancia, y regiones donde no ocurre interacción alguna.  Esta distribución sirvió para dividir el sRNA en zonas identificadas con las letras A, B, C, D y F, y en subzonas identificadas con números (Por Ejemplo A1, A2, etc) (Tabla 5.5). Estas zonas dentro del sRNA pueden interactuar con uno o varios mensajeros a la vez.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\textbf{N°}&
+		\textbf{sRNA} & \textbf{\begin{tabular}[c]{@{}c@{}}N° de mRNAs \\ que Interactúan\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Zona \\ (N° de Interacciones)\end{tabular}} \\ \hline
+		1&OmrA & 50 & A1(39), A2(21), B (0) \\ \hline
+		2&RyhB & 43 & A1(16), A2(33), A3(8) \\ \hline
+		3&OmrB & 26 & A1(19), A2(18), B (0) \\ \hline
+		4&GcvB & 26 & A (19), B (0), C (7), D (0) \\ \hline
+		5&Spot42 & 23 & A1(6), A2(8), A3(14), B (0), C (1) \\ \hline
+		6&OxyS & 18 & A (8), B (0), C1(3), C2(9), D (0) \\ \hline
+		7&MicA & 14 & A (14), B (0) \\ \hline
+		8&RybB & 11 & A (11), B (0) \\ \hline
+		9&FnrS & 10 & A1(2), A2(8), A3(3), B (0) \\ \hline
+		10&DsrA & 10 & A (0), B1(6), B2(8), B3(1), C (0) \\ \hline
+		11&SgrS & 8 & A (0), B (8), C (0) \\ \hline
+		12&MicC & 8 & A (2), B (0), C (6), D (0) \\ \hline
+		13&MicF & 7 & A1(5), A2(2), C (0) \\ \hline
+		14&RprA & 6 & A (0), B (6), C (0) \\ \hline
+		15&CyaR & 4 & A1(2), A2(3), B (0) \\ \hline
+		16&RygD & 4 & \begin{tabular}[c]{@{}c@{}}A(0), B(1), C(0), D(1), E(0), F(0),\\ G(0), H(1), I(0)\end{tabular} \\ \hline
+	\end{tabular}
+	\caption{Organización de las interacciones en los sRNAs con más de 4 mRNA blancos.}
+\end{table}
+
+\subsubsection{5.2.4.1 Análisis de OmrA.} 
+Para el caso de OmrA que interacciona con 50 mensajeros su estructura se dividió en 2 zonas principales (A y B) y 2 zonas secundarias (A1, A2) (Figura 5.6A). Solo en la zona A (Zona OmrA-A) ocurre la interacción sRNA-mRNA. Esta zona puede a su vez ser dividida en otras dos zonas secundarias OmrA-A1 y OmrA-A2. En OmrA-A1 ocurren un total de 35 interacciones mientras que en OmrA-A2 ocurren 15. Para determinar si este perfil de interacción está relacionado con la estructura secundaria del sRNA, se mapearon las diferentes zonas identificadas en un modelo de la estructura de OmrA construido por medio del software RNAfold WebServer (Figura 5.6B) 
+
+Como se puede observar la zona OmrA-B (que no presenta interacciones con mRNAs) tiene una estructura de horquilla rica en GC, con una alta probabilidad de estar apareado por lo tanto representaría una estructura más estable. En el caso de la zona OmrA, esta región presenta un menor contenido de GC y mayor probabilidad de formar regiones desapareadas, las cuales podría servir parar formar las interacciones iniciales con los mRNA blanco. Es interesante que la sub-zona OmrA-A1 que presenta un mayor número de interacciones también es la sub-zona con menor contenido GC y menor probabilidad de formar estructura estable.
+
+\subsubsection{5.2.4.2 Análisis de RyhB.} 
+Este sRNA interacciona con 43 mensajeros y el perfil de interacciones permitió dividir su estructura en 1 zona principal y 3 zonas secundarias RyhB-1A, RyhB-1B y RyhB-1C (figura 5.7A). A través de la zona 1A, RyhB interactúa con 16 mRNA s diferentes. Nueve de estos mRNA interactúan con RyhB exclusivamente a través de esta zona, mientras que los otros siete mRNAs interactúan con RyhB a través de las otras dos zonas (RyhB-1B y RyhB-1C).  Para el caso de la zona RyhB-1B, esta región interactúa con 33 mRNAs, 20 de los cuales interactúan exclusivamente con esa zona mientras que los otros 13 presentan interacciones compartidas con zonas RyhB-1A y RyhB-1C. Para el caso de RyhB-1C, en esta zona ocurren un total de 8 interacciones, de las cuales solo 1 es exclusiva (Figura 5.7B). 
+
+Al mapear este perfil de interacción en la estructura secundaria de RyhB, se puede observar que las zonas RyhB-1A y RyhB-1B, presentan un menor contenido de CG y una mayor probabilidad de formar regiones desapareadas que interactúen con los mRNA blanco, consistente con esto la sub-zona RyhB-1B que presenta un menor contenido de GC también es la sub-zona que presenta el mayor número de interacciones. Por otro lado, la zona RyhB-1C presenta una estructura de horquilla rica en CG, con una alta probabilidad de estar apareado es también la zona con menor número de interacciones. 
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=.8\textwidth]{imagenes/Imagen11.png}}
+		\caption[Análisis matricial de OmrA.]{\textbf{Análisis matricial de OmrA.} En A se observa el gráfico correspondiente al perfil de interacción sRNA-mRNA de OmrA. En B se observa la estructura secundaria predicha de OmrA con el Software RNAfold WebServer, se muestra la localización de las regiones identificadas en A. La escala de colores representa la probabilidad de formar una estructura secundaria estable con ella misma}
+	\end{centering}	
+\end{figure}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=.8\textwidth]{imagenes/Imagen12.png}}
+		\caption[Análisis matricial de RyhB.]{\textbf{Análisis matricial de RyhB.} En A se observa el gráfico correspondiente al perfil de interacción sRNA-mRNA de RyhB. En B se observa la estructura secundaria predicha de OmrA con el Software RNAfold WebServer, se muestra la localización de las regiones identificadas en A. La escala de colores representa la probabilidad de formar una estructura secundaria estable con ella misma}
+	\end{centering}	
+\end{figure}
+
+\subsubsection{5.2.4.3 Análisis de OmrB.} 
+OmrB, que interactúa con 26 mensajeros, puede ser dividido en 2 zonas principales OmrB-A y OmrB-B (Figura 5.8A). En OmrB-A se localizan todas las interacciones con los mRNA-blanco. La zona OmrB-A puede a su vez puede ser dividida en otras 2 zonas secundarias OmrB-A1 y OmrB-A2. En OmrB-A1 ocurren un total de 20 interacciones, de las cuales 7 corresponden a mRNA que interaccionan con OmrB exclusivamente a través de esta zona, mientras que los otros 13 corresponden a interacciones con mRNA que también interactúan con la otra zona secundaria (OmrB-A2). Por otra parte, en OmrB-A2 es el blanco de 19 mRNAs, 6 de los cuales interaccionan con OmrB exclusivamente a través de esta sub-zona. Al mapear el número de interacciones en la estructura secundaria del sRNA, nuevamente las regiones con menor contenido GC y mayor probabilidad de estar desapareadas son las que presentan una mayor cantidad de interacciones(OmrB-A1). Mientras que las regiones con alta probabilidad de formar una horquilla no presentan interacciones con mRNAs (Figura 5.8B).
+
+\subsubsection{5.2.4.4 Análisis de GcvB.} 
+Este sRNA Interactúa con 26 mensajeros.  Su estructura pudo ser dividida en 4 zonas principales GcvB-A, GcvB-B, GcvB-C, GcvB-D (Figura 5.9A). En las zonas GcvB-A y GcvB-C, se localizan todas las interacciones sRNA-mRNA. En GcvB-A y GcvB-C se pudieron identificar un total de 19 y 7 interacciones, respectivamente. Como se puede observar al mapear el perfil dentro de la estructura secundaria de GcvB, las zonas GcvB-B y GcvB-D tienen una estructura de horquilla rica en GC, con una alta probabilidad de estar apareado por lo tanto representa una estructura más estable. En el caso de las zonas GcvB-A y GcvB-C, estas regiones presentan un menor contenido de GC y una mayor probabilidad de formar regiones desapareadas que interactúen con los mRNA blanco. La zona GcvB-A que presenta un mayor número de interacciones también es la zona con mayor contenido CG de las 2 zonas en donde ocurren interacciones (Fhigura 5.9B). 
+
+\subsubsection{5.2.4.5 Análisis de Spot42.}  
+El perfil de interacción de Spot42 con sus mRNA blanco permite dividir a este sRNA en 3 zonas principales (Spot42-A, Spot42-B, y Spot42-C) y 3 zonas secundarias (Figura 5.10A). En las zonas Spot42-A y Spot42-C se localizan las interacciones sRNA-mRNA, mientras que Spot42-B no presentan ninguna interacción. La zona Spot42-A puede ser dividida en otras 3 zonas secundarias Spot42-A1, Spot42-A2 y Spot42-A3. En Spot42-A1 se pueden identificar siete interacciones, de las cuales 3 corresponden a mRNA que interactúan exclusivamente con esta zona en esta zona y 4 presentan interacciones compartidas con otras zonas (Spot42-A2 y Spot42A3). En la zona Spot42-A2 ocurren un total de 8 interacciones, de las cuales 3 son exclusivas y las otras 5 son interacciones compartidas con las zonas Spot42-A2 o Spot42-A3. La zona Spot42-B tiene una estructura de horquilla rica en CG, con una alta probabilidad de estar apareado por lo tanto representa una estructura más estable. En el caso de la zona Spot42-A, esta región presenta un menor contenido de GC y mayor probabilidad de formar regiones desapareadas que interactúen con los mRNA blanco. Es interesante que la sub-zona Spot42-A3 que presenta un mayor número de interacciones, también es la sub-zona con menor contenido GC y mayor probabilidad de formar una estructura estable (Figura 5.10B).
+
+Los resultados obtenidos muestran que en las regiones con alto contenido en GC cumplirían roles de carácter estructural, pues no formarían interacciones con mRNAs.  Para averiguar si esto se cumple en todos los casos de sRNA que interactúan con múltiples mRNAs, se cotejó el contenido GC vs el número de interacciones en las respectivas sub-zonas. Los resultados muestran que con excepción de RyhB, en todos los sRNA con múltiples interacciones, existe una región del sRNA con alto contenido en GC que no interactúa con ningún mensajero (Tabla 5.6, Anexo C)
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=.8\textwidth]{imagenes/Imagen13.png}}
+		\caption[Análisis matricial de OmrB.]{\textbf{Análisis matricial de OmrB.} En A se observa el gráfico correspondiente al perfil de interacción sRNA-mRNA de OmrB. En B se observa la estructura secundaria predicha de OmrB con el Software RNAfold WebServer, se muestra la localización de las regiones identificadas en A. La escala de colores representa la probabilidad de formar una estructura secundaria estable con ella misma}
+	\end{centering}	
+\end{figure}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=.8\textwidth]{imagenes/Imagen14.png}}
+		\caption[Análisis matricial de GcvB.]{\textbf{Análisis matricial de GcvB.} En A se observa el gráfico correspondiente al perfil de interacción sRNA-mRNA de GcvB. En B se observa la estructura secundaria predicha de GcvB con el Software RNAfold WebServer, se muestra la localización de las regiones identificadas en A. La escala de colores representa la probabilidad de formar una estructura secundaria estable con ella misma}
+	\end{centering}	
+\end{figure}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=.9\textwidth]{imagenes/Imagen15.png}}
+		\caption[Análisis matricial de Spot42.]{\textbf{Análisis matricial de Spot42.} En A se observa el gráfico correspondiente al perfil de interacción sRNA-mRNA de Spot42. En B se observa la estructura secundaria predicha de Spot42 con el Software RNAfold WebServer, se muestra la localización de las regiones identificadas en A. La escala de colores representa la probabilidad de formar una estructura secundaria estable con ella misma}
+	\end{centering}	
+\end{figure}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|l|}
+		\hline
+		\textbf{sRNAs} & \textbf{Presenta horquilla CG estable} \\ \hline
+		\begin{tabular}[c]{@{}l@{}}OmrA, OmrB, GcvB, Spot42, OxyS, MicA, \\ RybB, FnrS, DsrA, SgrS, MicC, MicF, RprA,\\   CyaR, RygD\end{tabular} & Si \\ \hline
+		RyhB & No \\ \hline
+	\end{tabular}
+	\caption{Resumen de la presencia de horquilla GC estables donde no ocurre interaccion con mensajeros en las estructuras secundarias de los sRNAs que interaccionan con 4 o más mensajeros, con la finalidad de identificar si en la estructura secundarias de los sRNAs se forma una zona en la cual no ocurre interacción sRNA-mRNA}
+\end{table}
+
+\section{OE3: Caracterización de la adaptación al repertorio de tRNA de los genes regulados por sRNA y de sus regiones de interacción.}
+
+\subsection{Análisis estadístico de los CAI y tAI de los mensajeros regulados por sRNAs.}
+
+Para determinar si existe una relación entre el uso de codones de mRNAs regulados por sRNA y aquellos que no, se caracterizó primero los valores de CAI de los genes a lo largo de la región codificante y de las regiones 5'-CDS, CDS-M, CDS-3', de ambos grupos. Al comparar los genes regulados por sRNA vs los no regulados por sRNAs solo se encontró diferencias significativas entre los valores de CAI o tAI de la región 3' CDS (p $<$ 0,05) siendo los valores de CAI de los genes regulados por sRNA levemente mayores a los no regulados. En el caso de los valores de tAI, en esta región también se observa la misma tendencia, pero no alcanza a lograr una significancia estadística (Tabla 5.7). Cuando se analizó si a lo largo de los genes regulados existían diferencia entre sus regiones, se observó que la región 5'CDS presentaba diferencias significativas con las tres regiones, esto también se repitió en los genes no regulados (datos no mostrado) sugiriendo que en los genes regulados por sRNA no existe una composición codogénica diferente a la presente en los genes no regulados. Un resultado interesante apareció cuando se comparó el valor de CAI o tAI de la zona de interacción con cada una de las regiones de CDS.  La región de interacción mostró valores de CAI mayores a la región 5'-CDS, y CDS-3', esto implica que en estas regiones se utilizan codones que se encuentran con mayor frecuencia a lo largo del genoma, por otra parte, al realizar el mismo análisis usando los valores de tAI, se observó que la región de interacción presenta menores valores de tAI que cada una de las regiones analizadas (Tabla 5.8). En su conjunto estos resultados sugieren que en las regiones de interacción se utilizan preferencialmente codones de alto uso, pero que tienen pocos tRNA que los decodifican. Esto implica que en las regiones donde ocurre la interacción sRNA-mRNA los ribosomas tendrían una tasa de avance más lento en relación con el resto de la región codificante. Con la finalidad de corroborar estos resultados se realizaron los mismos test, pero pareados para ver si las diferencias significativas son por casos individuales (Tabla 5.9), en donde se observó que la tendencia mostrada en la Tabla 5.8 se repite en la Tabla 5.9 
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\multicolumn{5}{|l|}{\textbf{Comparación genes regulados vs no regulados en sus valores de CAI y tAI}} \\ \hline
+		\textbf{Índice} & \textbf{Región} & \textbf{\begin{tabular}[c]{@{}c@{}}Media Regulados \\ por sRNA\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Media No regulados\\ por sRNA\end{tabular}} & \textbf{Valor P} \\ \hline
+		\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}Codon \\ Adaptation \\ Index (CAI)\end{tabular}} & 5'CDS & 0.6885 $±$ 0.003794 & 0.6870 $±$ 0.001086 & 0.7153 \\ \cline{2-5} 
+		& CDS-M & 0.7159 $±$ 0.004670 & 0.7144 $±$ 0.001315 & 0.7560 \\ \cline{2-5} 
+		& CDS-3' & 0.6994 $±$ 0.007894 & 0.6806 $±$ 0.002111 & 0.0217* \\ \hline
+		\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}tRNA \\ Adaptation \\ Index (tAI)\end{tabular}} & 5'CDS & 0.2460 $±$ 0.001705 & 0.2438 $±$ 0.0004673 & 0.2197 \\ \cline{2-5} 
+		& CDS-M & 0.2564 $±$ 0.001528 & 0.2553 $±$ 0.0007802 & 0.5183 \\ \cline{2-5} 
+		& CDS-3' & 0.2636 $±$ 0.003571 & 0.2569 $±$ 0.0009786 & 0.0709 \\ \hline
+	\end{tabular}
+	\caption{Tabla comparativa CAI y tAI de los mensajeros que interaccionan con sRNA v/s los mensajeros que no interaccionan con sRNA. Se compararon las diferencias estadísticas entre grupos usando el test Mann-Whitney no pareado. El asterisco sugiere significancia estadística}
+\end{table}
+
+A partir de los datos obtenidos en la Tabla 5.7 la hipótesis planteada para esta memoria es rechazada por lo que con la finalidad de encontrar un factor que indique como se forma la interacción sRNA-mRNA se realizaron los siguientes estudios:
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\multicolumn{5}{|c|}{\textbf{Comparación de regiones en genes regulados por sRNAs}} \\ \hline
+		\textbf{Índice} & \textbf{Región} & \textbf{\begin{tabular}[c]{@{}c@{}}Media Región \\ Interacción\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Media de Región \\ CDS\end{tabular}} & \multicolumn{1}{l|}{\textbf{Valor P}} \\ \hline
+		\multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Codon \\ Adaptation \\ Index (CAI)\end{tabular}} & 5'-CDS & 0,728 $±$ 0,159 & 0,688 $±$ 0,068 & \textless0,001* \\ \cline{2-5} 
+		& CDS-M & 0,728 $±$ 0,159 & 0,715 $±$ 0,060 & 0,2161 \\ \cline{2-5} 
+		& CDS-3' & 0,728 $±$ 0,159 & 0,699 $±$ 0,134 & 0,0076* \\ \cline{2-5} 
+		& CDS & 0,728 $±$ 0.159 & 0,713 $±$ 0,061 & 0,1159 \\ \hline
+		\multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}tRNA \\ Adaptation \\ Index (tAI)\end{tabular}} & 5'-CDS & 0,216 $±$ 0,006 & 0,246 $±$ 0,002 & \textless0,0001* \\ \cline{2-5} 
+		& CDS-M & 0,216 $±$ 0,006 & 0,256 $±$ 0,002 & \textless 0,0001* \\ \cline{2-5} 
+		& CDS-3' & 0,216 $±$ 0,006 & 0,266 $±$ 0,007 & \textless 0,0001* \\ \cline{2-5} 
+		& CDS & 0,216 $±$ 0,006 & 0,262 $±$ 0,001 & \textless 0,0001* \\ \hline
+	\end{tabular}
+	\caption{Comparación de los valores de CAI y tAI entre la región de interacción y los valores presentes en las regiones codificantes. Se compararon las diferencias estadísticas entre grupos usando el test Mann-Whitney no pareado. El asterisco sugiere significancia estadística.}
+\end{table}
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Comparación de regiones en genes regulados por sRNAs (Análisis Pareado)}} \\ \hline
+		\textbf{Índice} & \textbf{Región} & \textbf{Media de las Diferencias} & \textbf{Valor-P} \\ \hline
+		\multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Codon \\ Adaptation \\ Index (CAI)\end{tabular}} & 5'-CDS & 0.03084 $±$ 0.1501 & 0.0002* \\ \cline{2-4} 
+		& CDS-M & -0.01108 $±$ 0.1498 & 0.1792 \\ \cline{2-4} 
+		& CDS-3' & 0.02990 $±$ 0.1820 & 0.0030* \\ \cline{2-4} 
+		& CDS & -0.000096 $±$ 0.1477 & 0.9905 \\ \hline
+		\multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}tRNA \\ Adaptation \\ Index (tAI)\end{tabular}} & 5'-CDS & 0.4733 $±$ 0.1530 & \textless 0.0001* \\ \cline{2-4} 
+		& CDS-M & 0.4625 $±$ 0.1541 & \textless 0.0001* \\ \cline{2-4} 
+		& CDS-3' & 0.4609 $±$ 0.1623 & \textless 0.0001* \\ \cline{2-4} 
+		& CDS & 0.4631 $±$ 0.1540 & \textless 0.0001* \\ \hline
+	\end{tabular}
+	\caption{Comparación de los valores de CAI y tAI entre la región de interacción y los valores presentes en las regiones codificantes. Se compararon las diferencias estadísticas entre grupos usando el test Mann-Whitney pareado. El asterisco sugiere significancia estadística.}
+\end{table}
+
+\subsection{Regiones conservadas en mRNAs reconocidos por el mismo sRNA.}
+
+El resultado del análisis de densidad de interacciones sRNA-mRNA indicó que existían regiones dentro del sRNA que reconocen específicamente un conjunto de mRNA. Para determinar si en estos mRNA existe una región conservada o motivo que reconozca a esta región del sRNA se decidió realizar un análisis de búsqueda de motivos conservados por cada uno de los mensajeros que interaccionan con sRNAs. Por medio del uso de MEMEsuit (http://meme-suite.org) se ingresaron la secuencia de las regiones de interacciones, y el software por medio de uso de cadenas de Markov localizó una posible secuencia consenso.  A continuación, se muestran los resultados de este análisis.
+
+\subsubsection{5.3.2.1. OmrA}
+En la Tabla 5.10, se presenta los motivos identificados en todos los mRNAs que interactúan con OmrA o con sus zonas (OmrA-A1 y OmrA-A2):
+
+\begin{table}[H]
+	\centering
+	\resizebox{15cm}{!}{
+	\begin{tabular}{|l|l|l|l|l|l|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{sRNA}} & \multicolumn{1}{c|}{\textbf{Valor-P}} & \multicolumn{1}{c|}{\textbf{Tamaño}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Mensajeros en \\ donde está \\ el Motivo\end{tabular}}} & \multicolumn{1}{c|}{\textbf{Motivo}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}N° de \\ Secuencias\end{tabular}}} \\ \hline
+		OmrA & 1,7x10$^{-1}$ & 6 & \textit{\begin{tabular}[c]{@{}l@{}}14 (sufD, cheZ,\\  folP, csgB, yadL,\\ yfB, csiE, clpB,\\ ygjN, glcD, yzgL,\\  yrfC, hisM, cydD, \\ xylH, osmB, rumA,\\  liT)\end{tabular}} & 
+		\begin{minipage}{5cm}
+		\begin{figure}[H]
+			\begin{centering}
+				\setlength\fboxsep{0pt}
+				\setlength\fboxrule{0.5pt}
+				\fbox{\includegraphics[width=1\textwidth]{imagenes/Imagen16.png}}
+			\end{centering}	
+		\end{figure}
+		\end{minipage} & \multicolumn{1}{c|}{14/50} \\ \hline
+		OmrA-A1 & 9,6x10$^{-10}$ & 6 & \begin{tabular}[c]{@{}l@{}}21 (gntP, ygjN, \\ hokB,ssuC, \\ csgD, ybeT, \\ mipA, clpB, \\ yzgL,ompT, \\ narH, fecA, \\ xylH, fepA, \\ uup, csgB,\\   csiE, folP, \\ sufD, glmM)\end{tabular} &
+		\begin{minipage}{5cm}
+			\begin{figure}[H]
+				\begin{centering}
+					\setlength\fboxsep{0pt}
+					\setlength\fboxrule{0.5pt}
+					\fbox{\includegraphics[width=1\textwidth]{imagenes/Imagen17.png}}
+				\end{centering}	
+			\end{figure}
+		\end{minipage} & \multicolumn{1}{c|}{21/39} \\ \hline
+		OmrA-A2 & 7,9x10$^{-3}$ & 6 & \begin{tabular}[c]{@{}l@{}}20 (malK, gmhB, \\ xylH, yrfC, deoR, \\ btuB, yccS, cydD,\\ glcD,hokD, yhbE, \\ yaeP, cheZ, yeaZ, \\ yadD, hisM, ydhT, \\ ydbC, fdoI, fimF)\end{tabular} &  
+		\begin{minipage}{5cm}
+			\begin{figure}[H]
+				\begin{centering}
+					\setlength\fboxsep{0pt}
+					\setlength\fboxrule{0.5pt}
+					\fbox{\includegraphics[width=1\textwidth]{imagenes/Imagen18.png}}
+				\end{centering}	
+			\end{figure}
+		\end{minipage} & \multicolumn{1}{l|}{20/20} \\ \hline
+	\end{tabular}
+	}
+	\caption{Secuencias consenso para OmrA, junto con las zonas que fueron localizadas en éste.}
+\end{table}
+
+Para el caso de la región consenso de OmrA de todos los mensajeros que interaccionan con este se encontró una secuencia consenso que presenta un Valor-p de 1,7x10$^{-1}$ con un tamaño de 6 y está localizado en 14 de los 50 casos utilizados para buscar la secuencia consenso de los mensajeros que interaccionan con OmrA, lo que representa a un 36.73\% del total de los casos utilizados, estadísticamente la secuencia consenso no es válida. Para la región OmrA-A1 la secuencia consenso identificada presenta un Valor-P de 9,6x10$^{-10}$ con un tamaño de 6 y está presente en 21 de los 35 casos utilizados para buscar la secuencia consenso de los mensajeros que interaccionan con OmrA, lo que representa a un 53,8\% del total de los casos utilizados, estadísticamente la secuencia consenso es válida y como está presente en más de un 50\% de los casos utilizados se puede considerar una secuencia consenso. Para el caso de OmrA-A2 la secuencia consenso identificada presenta un Valor-P de 7,9x10$^{-3}$ con un tamaño de 6 y está presente en 20 de los 20 casos utilizados para buscar la secuencia consenso de los mensajeros que interaccionan con OmrA, lo que representa a un 100\% del total de los casos utilizados, estadísticamente  la secuencia consenso no es válida y aunque esté presente en más de 50\% de los casos, como estadísticamente  no es significativo esta secuencia no se considera una secuencia consenso para este caso.
+
+\subsubsection{5.3.2.2. RyhB}
+
+Para el caso de la región consenso de RyhB de todos los mensajeros que interaccionan con este se encontró una secuencia consenso que presenta un Valor-P de 1x10$^{-8}$ con un tamaño de 8 pb y está localizado en 20 de los 43 mensajeros que interactúan con RyhB, lo que porcentualmente representa un 46,51\% del total de los casos utilizados. Para la región RyhB-A1 la secuencia consenso identificada presenta un Valor-P de 0,26 con un tamaño de 7 y está localizado en el 87,5\% de las secuencias analizadas. Para el caso de la región RyhB-A2 la secuencia consenso identificado tiene un Valor-P de 8,9x10$^{-13}$ con un tamaño de 8 y está presente 19 de 33 mensajeros que interaccionan con esta región, lo que representa a un 57,57\% del total de mensajeros utilizados. Para el caso de la región RyhB-A3 la secuencia consenso identificado presenta un Valor-P de 1,4x10$^{-3}$ con un tamaño de 8 e identificada en 5 de los 8 mensajeros que interaccionan en esta región, lo que representa a un 55,5\% del total de los mensajeros. A continuación, la Tabla 5.11 resume los resultados para cada una de las regiones presentes en RyhB:
+
+\begin{table}[H]
+	\centering
+	\resizebox{15cm}{!}{
+		\begin{tabular}{|l|l|l|l|l|c|}
+			\hline
+			\textbf{sRNA} & \textbf{Valor-P} & \textbf{Tamaño} & \textbf{\begin{tabular}[c]{@{}c@{}}Mensajeros en \\ donde está \\ el Motivo\end{tabular}} & \textbf{Motivo} & \textbf{\begin{tabular}[c]{@{}c@{}}N° de \\ Secuencias\end{tabular}} \\ \hline
+			RyhB & 1x10$^{-8}$ & 8 & \textit{\begin{tabular}[c]{@{}c@{}}20(sucD, proA,\\  ygiQ, yagJ, yegK, \\ sucB, yadS, sugE,\\  bfr, ydaN, ompC, \\ metI, yiaM, perM, \\ yheF, galK, motA, \\ icd, mdh, sodB)\end{tabular}} &  
+			\begin{minipage}{5cm}
+				\begin{figure}[H]
+					\begin{centering}
+						\setlength\fboxsep{0pt}
+						\setlength\fboxrule{0.5pt}
+						\fbox{\includegraphics[width=1\textwidth]{imagenes/Imagen19.png}}
+					\end{centering}	
+				\end{figure}
+			\end{minipage}& 20/43 \\ \hline
+			RyhB-A1 & 2,6x10$^{-1}$ & 7 & \begin{tabular}[c]{@{}c@{}}14 (fur, ompF, ftn, \\ sucC, ompA, ptsG, \\ ygeZ, hns, ynfF, \\ kdpA, perM, metI, \\ ybjG, sdhD)\end{tabular} &  
+			\begin{minipage}{5cm}
+				\begin{figure}[H]
+					\begin{centering}
+						\setlength\fboxsep{0pt}
+						\setlength\fboxrule{0.5pt}
+						\fbox{\includegraphics[width=1\textwidth]{imagenes/Imagen20.png}}
+					\end{centering}	
+				\end{figure}
+			\end{minipage}& 14/16 \\ \hline
+			RyhB-A2 & 8,9x10$^{-13}$ & 8 & \begin{tabular}[c]{@{}c@{}}19 (sucD, proA, \\ ygiQ, yagJ, yegK, \\ yiaM, bfr, ydaN, \\ sucB, sugE, yadS, \\ metH, ygiT, mdh,\\ metI, citG, yagT, \\ fumA, shiA)\end{tabular} &  
+			\begin{minipage}{5cm}
+				\begin{figure}[H]
+					\begin{centering}
+						\setlength\fboxsep{0pt}
+						\setlength\fboxrule{0.5pt}
+						\fbox{\includegraphics[width=1\textwidth]{imagenes/Imagen21.png}}
+					\end{centering}	
+				\end{figure}
+			\end{minipage}			
+			& 19/33 \\ \hline
+			RyhB-A3 & 1,4x10$^{-3}$ & 8 & \begin{tabular}[c]{@{}c@{}}5 (ompC, galK, \\ metI, sodB, iscS)\end{tabular} &
+			\begin{minipage}{5cm}
+				\begin{figure}[H]
+					\begin{centering}
+						\setlength\fboxsep{0pt}
+						\setlength\fboxrule{0.5pt}
+						\fbox{\includegraphics[width=1\textwidth]{imagenes/Imagen22.png}}
+					\end{centering}	
+				\end{figure}
+			\end{minipage}				  
+			& 5/8 \\ \hline
+		\end{tabular}
+	}
+	\caption{Secuencias consenso para RyhB, junto con las zonas que fueron identificadas para este sRNA. }
+\end{table}
+
+\subsubsection{5.3.2.3. OmrB}
+Para el caso de OmrB, no se identificaron motivos estadísticamente significativos. Sin embargo, se identificó un motivo común a todos los mRNA que interactúan con OmrB. Este motivo tiene un tamaño de 6 nucleótidos, pero un valor-P de 2x10$^{2}$ (Tabla 5.12).
+
+\begin{table}[H]
+	\centering
+	\resizebox{15cm}{!}{
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			\textbf{sRNA} & \textbf{Valor-P} & \textbf{Tamaño} & \textbf{\begin{tabular}[c]{@{}c@{}}Mensajeros en \\ donde está \\ el Motivo\end{tabular}} & \textbf{Motivo} & \textbf{\begin{tabular}[c]{@{}c@{}}N° de \\ Secuencias\end{tabular}} \\ \hline
+			OmrB & 2,0x10$^{2}$ & 6 & \textit{\begin{tabular}[c]{@{}c@{}}25 (yeeE, ypdD, \\ osmB, csgD, ompA, \\ fecA, csgB, folP, \\ yhdN, mutM, ykfI, \\ ybhT, fimF, yaiY,\\  fldA, ybeT, yphD, \\ trxC, gntP, ybjE,\\  fepA, srlB,yjhI, \\ glmM, yaeH)\end{tabular}} & 
+			\begin{minipage}{5cm}
+				\begin{figure}[H]
+					\begin{centering}
+						\setlength\fboxsep{0pt}
+						\setlength\fboxrule{0.5pt}
+						\fbox{\includegraphics[width=1\textwidth]{imagenes/Imagen23.png}}
+					\end{centering}	
+				\end{figure}
+			\end{minipage}			 
+			& 25/26 \\ \hline
+			OmrB-A1 & 6,2x10$^{-1}$ & 20 & \begin{tabular}[c]{@{}c@{}}5 (fimF, ypdD, \\ yaiY, fldA, ybjE)\end{tabular} &  
+			\begin{minipage}{5cm}
+				\begin{figure}[H]
+					\begin{centering}
+						\setlength\fboxsep{0pt}
+						\setlength\fboxrule{0.5pt}
+						\fbox{\includegraphics[width=1\textwidth]{imagenes/Imagen24.png}}
+					\end{centering}	
+				\end{figure}
+			\end{minipage}
+			& 5/19 \\ \hline
+			OmrB-A2 & 1,5x10$^{-1}$ & 8 & \begin{tabular}[c]{@{}c@{}}9 (yphD, ypdD, \\ ybeT, yaeH, ykfI, \\ folP, trxC, ybjE, \\ yhdN)\end{tabular} &  
+			\begin{minipage}{5cm}
+				\begin{figure}[H]
+					\begin{centering}
+						\setlength\fboxsep{0pt}
+						\setlength\fboxrule{0.5pt}
+						\fbox{\includegraphics[width=1\textwidth]{imagenes/Imagen25.png}}
+					\end{centering}	
+				\end{figure}
+			\end{minipage}			
+			& 9/18 \\ \hline
+		\end{tabular}
+	}
+	\caption{Secuencias consenso para OmrB, junto con las zonas que fueron identificadas para este sRNA.}
+\end{table}
+
+\subsubsection{5.3.2.4. GcvB}
+En relación a los mRNA que interactúan con GcvB, se identificó un motivo con un Valor-P de 2,9 x 10$^{-3}$ en 14 de los 26 mensajeros que interaccionan con GcvB, lo que significa que está presente a un 53,8\% de los mensajeros. Para el caso de la región GcvB-A se encontró una secuencia consenso que presenta un Valor-P de 7,3x10$^{-6}$ y está presente en un 89,4\% (17/19) de los mensajeros que interaccionan con esta región. La secuencia consenso identificada para GcvB fue la misma que se identificó en el análisis de GcvB-A, probablemente debido a que el mayor número de interacciones que establece GcvB lo hace a través de la región GcvB-A. Para el caso de la región GcvB-C se identificó una secuencia consenso que presenta un Valor-P de 1,1x10$^{-1}$ con un tamaño de 6 y está localizado en el 100\% de los mensajeros utilizados en este caso (Tabla 5.13).
+
+\begin{table}[H]
+	\centering
+	\resizebox{15cm}{!}{
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			\textbf{sRNA} & \textbf{Valor-P} & \textbf{Tamaño} & \textbf{\begin{tabular}[c]{@{}c@{}}Mensajeros en \\ donde está \\ el Motivo\end{tabular}} & \textbf{Motivo} & \textbf{\begin{tabular}[c]{@{}c@{}}N° de \\ Secuencias\end{tabular}} \\ \hline
+			GcvB & 2,9x10$^{-3}$ & 14 & \textit{\begin{tabular}[c]{@{}c@{}}14 (oppA, ydbH, \\ ilvC, livK, ompA, \\ thrL, dppA, iciA, \\ ompF, ompC, sodB, \\ livJ, ndK, ptsG)\end{tabular}} &  
+			\begin{minipage}{5cm}
+				\begin{figure}[H]
+					\begin{centering}
+						\setlength\fboxsep{0pt}
+						\setlength\fboxrule{0.5pt}
+						\fbox{\includegraphics[width=1\textwidth]{imagenes/Imagen26.png}}
+					\end{centering}	
+				\end{figure}
+			\end{minipage}			
+			& 14/26 \\ \hline
+			GcvB-A & 7,3x10$^{-6}$ & 17 & \begin{tabular}[c]{@{}c@{}}17 (oppA, ybdH, \\ ilvC, livK, thrL, \\ ompA, iciA, ompF, \\ dppA, ompC, sodB, \\ ndK,,livJ, ptsG, \\ yaeC, gltI, sstT)\end{tabular} & 
+			\begin{minipage}{5cm}
+				\begin{figure}[H]
+					\begin{centering}
+						\setlength\fboxsep{0pt}
+						\setlength\fboxrule{0.5pt}
+						\fbox{\includegraphics[width=1\textwidth]{imagenes/Imagen27.png}}
+					\end{centering}	
+				\end{figure}
+			\end{minipage}& 17/19 \\ \hline
+			GcvB-C & 1,1x10$^{-1}$ & 7 & \begin{tabular}[c]{@{}c@{}}7 (brnQ, hns,\\  gdhA, lrp, cycA, \\ dksA, serA)\end{tabular} &  
+			\begin{minipage}{5cm}
+				\begin{figure}[H]
+					\begin{centering}
+						\setlength\fboxsep{0pt}
+						\setlength\fboxrule{0.5pt}
+						\fbox{\includegraphics[width=1\textwidth]{imagenes/Imagen28.png}}
+					\end{centering}	
+				\end{figure}
+			\end{minipage}			
+			& 7/7 \\ \hline
+		\end{tabular}
+	}
+	\caption{Secuencias consenso para GcvB, junto con las zonas que fueron identificadas para este sRNA}
+\end{table}
+
+\subsubsection{5.3.2.4. Spot42}
+
+En el caso de mensajeros que interactúan con Spot42 se identificó un motivo cuyo Valor-P es de 5,4x10$^{-10}$ y está localizado en el 91,3\% de los mensajeros que interaccionan con este sRNA. Para el caso de la región S42-A1 se encontró una secuencia consenso de 8 nucleótidos con un Valor-P de 5,1x10$^{-5}$ presente en el 100\% de los mensajeros que interaccionan con esta región. Para el caso de la región S42-A2 se identificó un motivo de 6 nucleótidos (Valor-P = 1,6x10$^{-1}$) localizado también en el 100\% de los mensajeros que interaccionan con esta región. A pesar de esto, debido a su valor P no se puede asignar a este motivo significancia estadística.
+En la región S42-A3 también se identificó un motivo de 8 nucleótidos (Valor-P = 1,7x10$^{-11}$) localizado en 10 de los 14 mensajeros que interaccionan en esta región (76,9\%) (Tabla 5.14)
+
+\begin{table}[H]
+	\centering
+	\resizebox{15cm}{!}{
+		\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		\textbf{sRNA} & \textbf{Valor-P} & \textbf{Tamaño} & \textbf{\begin{tabular}[c]{@{}c@{}}Mensajeros en \\ donde está \\ el Motivo\end{tabular}} & \textbf{Motivo} & \textbf{\begin{tabular}[c]{@{}c@{}}N° de \\ Secuencias\end{tabular}} \\ \hline
+		Spot42 & 5,4x10$^{-10}$ & 8 & \textit{\begin{tabular}[c]{@{}c@{}}21\\ (fucP, ascF, \\ ompC, ompA, galK, \\ ompF, puuE, nanC, \\ dppA, glpF, fucI, \\ gltA, atoD, xylF, \\ sucC, srlA, ybbW\\ , paaK, caiA, nanT, \\ sthA)\end{tabular}} &  
+		\begin{minipage}{5cm}
+			\begin{figure}[H]
+				\begin{centering}
+					\setlength\fboxsep{0pt}
+					\setlength\fboxrule{0.5pt}
+					\fbox{\includegraphics[width=1\textwidth]{imagenes/Imagen29.png}}
+				\end{centering}	
+			\end{figure}
+		\end{minipage}& 21/23 \\ \hline
+		S42-A1 & 5,1x10$^{-5}$ & 8 & \begin{tabular}[c]{@{}c@{}}6 (gltA, atoD, \\ nanC, paaK, galK, \\ xylF)\end{tabular} & 
+		\begin{minipage}{5cm}
+			\begin{figure}[H]
+				\begin{centering}
+					\setlength\fboxsep{0pt}
+					\setlength\fboxrule{0.5pt}
+					\fbox{\includegraphics[width=1\textwidth]{imagenes/Imagen30.png}}
+				\end{centering}	
+			\end{figure}
+		\end{minipage}		
+		& 6/6 \\ \hline
+		S42-A2 & 1,6x10$^{-1}$ & 6 & \begin{tabular}[c]{@{}c@{}}8 (puuE, sucC, \\ caiA, galK, srlA,\\  paaK, ybbW, xylF)\end{tabular} &  
+		\begin{minipage}{5cm}
+			\begin{figure}[H]
+				\begin{centering}
+					\setlength\fboxsep{0pt}
+					\setlength\fboxrule{0.5pt}
+					\fbox{\includegraphics[width=1\textwidth]{imagenes/Imagen31.png}}
+				\end{centering}	
+			\end{figure}
+		\end{minipage}		
+		& 8/8 \\ \hline
+		S42-A3 & 1,7x10$^{-11}$ & 8 & \begin{tabular}[c]{@{}c@{}}10 (fucP, ompC, \\ ompA, glpF, fucI, \\ ompF, puuE, ascF, \\ dppA, galK)\end{tabular} &  
+		\begin{minipage}{5cm}
+			\begin{figure}[H]
+				\begin{centering}
+					\setlength\fboxsep{0pt}
+					\setlength\fboxrule{0.5pt}
+					\fbox{\includegraphics[width=1\textwidth]{imagenes/Imagen32.png}}
+				\end{centering}	
+			\end{figure}
+		\end{minipage}		
+		& 10/14 \\ \hline	
+		\end{tabular}
+	}
+	\caption{Secuencias consenso para Spot42, junto con las zonas que fueron identificadas para este sRNA}
+\end{table}
+
+\section{OE4: Generación de un mapa de interacciones sRNA-mRNA que incluya la adaptación del repertorio de tRNA y uso codogénico del gen completo y de la región de interacción.}
+
+Los sRNAs participan formado una red de interacción que regula la expresión génica en E. coli. Para tener una adecuada comprensión de esta red, es útil usar aproximaciones que permitan su visualización incorporando diversos tipos de información. En este caso, el tipo de regulación sobre la expresión génica, la adaptación al uso de codones, adaptación al pool de tRNA, regiones presentes dentro de cada sRNA, procesos biológicos involucrados y motivos presentes en sus mRNA blanco. Para la generación de la red de interacción se utilizó al software Cytoscape junto con el software Microsoft Excel para crear el script que creará la red de interacción sRNA-mRNA en E. coli. 
+Primero se determinó una red donde se incorporó el tipo de regulación, sRNAs, mRNA blanco, y tipo de interacción (experimental o predicha). Los resultados de esta red se muestran en la Figura 5.11, en esta red se incluyeron las 435 interacciones que fueron establecidas en esta tesis.
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.9pt}
+		\fbox{\includegraphics[width=.95\textwidth]{imagenes/Imagen33.png}}
+		\caption[Modelo de red de interacción sRNA-mRNA en \textit{E. coli}]{\textbf{Modelo de red de interacción sRNA-mRNA en \textit{E. coli}} En donde se puede visualizar un área de mayor densidad en donde se ubican la mayor cantidad de interacciones comunes y otra zona en donde se encuentran los sRNAs que interaccionan con 2 mensajeros y que no comparten interacciones entre sRNAs. Como se puede apreciar los rectángulos amarillos representan los sRNAs, mientras que los rectángulos azules representan a los mensajeros que forman interacción sRNA-mRNA. Para el caso de las líneas las líneas rojas representan represiones, las verdes inducciones y las negras representan interacciones no definidas.}
+	\end{centering}	
+\end{figure}
+
+El siguiente paso fue incorporar en la red, la información sobre las zonas identificadas en cada uno de los mRNA que establecen múltiples interacciones.
+
+Para crear una visualización más completa de la red de interacción en \textit{E. coli} se crearon modelos de los sRNAs que interaccionaban con sobre 4 mensajeros con la finalidad de crear una representación de los gráficos obtenidos en el OE2 los cuales se muestran a continuación:
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.9pt}
+		\fbox{\includegraphics[width=.95\textwidth]{imagenes/Imagen34.png}}
+		\caption[Modelo de red de interacción de OmrA]{\textbf{Modelo de red de interacción de OmrA} Se puede apreciar la distribución de zonas de OmrA, junto con esto se pueden apreciar las 3 zonas de OmrA y el tamaño de estas se ve reflejado por las cantidades de interacciones sRNA-mRNA, las líneas rojas punteadas representan represiones predichas por métodos bioinformáticos, las líneas verdes punteadas representan inducciones predichas por métodos bioinformáticas y las rojas sólidas representan represiones identificadas por métodos empíricos. Los valores de CAI son indicados en una escala de colores en el nodo (color verde representa CAI bajos y el color rojo representa a CAI más altos). El tamaño del nodo representa el valor de tAI con respecto al máximo y mínimo identificados en \textit{E. coli.} }
+	\end{centering}	
+\end{figure}
+
+Para el caso de RyhB que posee 43 interacciones se puede apreciar en la figura 5.13 como está organizada:
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.9pt}
+		\fbox{\includegraphics[width=.95\textwidth]{imagenes/Imagen35.png}}
+		\caption[Modelo red Interacción RyhB]{\textbf{Modelo red Interacción RyhB} Modelo red Interacción RyhB. Se puede apreciar las 3 zonas de RyhB, donde el tamaño de estas se ve reflejado por las cantidades de interacciones sRNA-mRNA que forman, las líneas rojas punteadas representan represiones predichas por métodos bioinformáticos, las líneas verdes punteadas representan inducciones predichas por métodos bioinformáticos, las rojas sólidas representan represiones identificadas por métodos empíricos y las líneas verdes sólidas representan inducciones identificadas por métodos empíricos. Los colores de los nodos representan los valores de CAI de los mensajeros con respecto al CAI máximo y al CAI mínimo identificados en el genoma de \textit{E. coli} (0,924 valor máximo y 0,3613 valor mínimo). Para el caso de los tamaños de los mensajeros estos reflejan al tAI con respecto al máximo y mínimo identificados en \textit{E. coli.} (0,3779 valor máximo y 0,1501 valor mínimo)}
+	\end{centering}	
+\end{figure}
+
+Como puede apreciarse en la Figura 5.13 se puede observar la distribución de las interacciones alrededor de las zonas del RyhB, como también la presencia de mensajeros que interaccionan en 2 zonas a la vez (13 interacciones que interaccionan entre 2 zonas), también se puede apreciar mensajeros que interaccionan con 3 zonas a la vez (1 interacción que interactúa con las 3 zonas a la vez) también se puede apreciar que en la zona Ryhb-A2 existen la mayor cantidad de interacciones que están registradas para RyhB (un total de 20) de los cuales están divididos en 18 represiones y 2 inducciones, en el caso de la zona RyhB-A1 se pueden encontrar un total de 9 interacciones las cuales las 9 son represiones y en el caso de la zona RyhB-A3 es la zona que presenta menos cantidad de interacciones, con un total de 1 interacción.
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.9pt}
+		\fbox{\includegraphics[width=.95\textwidth]{imagenes/Imagen36.png}}
+		\caption[Modelo de red de interacción OmrB]{\textbf{Modelo de red de interacción OmrB} Se puede apreciar las 3 zonas de OmrB, donde el tamaño de estas se ve reflejado por las cantidades de interacciones sRNA-mRNA que forman, las líneas rojas punteadas representan represiones predichas por métodos bioinformáticos, las líneas verdes punteadas representan inducciones predichas por métodos bioinformáticos y las líneas rojas sólidas representan represiones identificadas por métodos empírico. Los colores de los nodos representan los valores de CAI de los mensajeros con respecto al CAI máximo y al CAI mínimo identificados en el genoma de \textit{E. coli} (0,924 valor máximo y 0,3613 valor mínimo). Para el caso de los tamaños de los mensajeros estos reflejan al tAI con respecto al máximo y mínimo identificados en \textit{E. coli} (0,3779 valor máximo y 0.1501 valor mínimo)}
+	\end{centering}	
+\end{figure}
+
+Como puede apreciarse en la \textbf{Figura 5.14} se puede observar la distribución de las interacciones alrededor de las zonas del OmrB. También se puede observar la presencia de mensajeros que interaccionan en 2 zonas a la vez (13 interacciones que interaccionan entre 2 zonas), también se puede apreciar que en la zona OmrB-A1 existen las mayores cantidades de interacciones que están registradas para OmrB (un total de 7) de los cuales todas son represiones, en el caso de la zona OmrB-A2 se pueden encontrar un total de 6 interacciones las cuales las 5 son represiones y solo 1 inducción. En el Caso de la zona OmrB-B no presenta ninguna interacción esto se puede deber a que es en esa zona donde la proteína HFQ interacciona con el sRNA.
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.9pt}
+		\fbox{\includegraphics[width=.95\textwidth]{imagenes/Imagen37.png}}
+		\caption[Modelo de red de interacción GcvB]{\textbf{Modelo de red de interacción GcvB} Se puede apreciar las 4 zonas de GcvB, donde el tamaño de estas se ve reflejado por las cantidades de interacciones sRNA-mRNA que forman, las líneas rojas punteadas representan represiones predichas por métodos bioinformáticos, las líneas verdes punteadas representan inducciones predichas por métodos bioinformáticos y las líneas rojas sólidas representan represiones identificadas por métodos empírico. Los colores de los nodos representan los valores de CAI de los mensajeros con respecto al CAI máximo y al CAI mínimo identificados en el genoma de \textit{E. coli} (0,924 valor máximo y 0,3613 valor mínimo). Para el caso de los tamaños de los mensajeros estos reflejan al tAI con respecto al máximo y mínimo identificados en \textit{E. coli} (0,3779 valor máximo y 0,1501 valor mínimo).}
+	\end{centering}	
+\end{figure}
+
+Para el caso de GcvB (Figura 5.15), se puede observar que este sRNA está dividido en 4 zonas entre las cuales 2 realizan interacciones (GcvB-A y GcvB-C) y 2 zonas en las que no existe ningún tipo de interacción sRNA-mRNA (GcvB-C y GcvB-D). En el caso de las zonas que existen interacciones sRNA y mRNA, en la zona GcvB-A existe la mayor cantidad de interacciones en esa zona registradas para GcvB (18 interacciones) de las cuales todas son represiones, en comparación en la zona GcvB-C existe la menor cantidad de interacciones registradas para GcvB (7 interacciones) las cuales están dividida en 6 represiones y 1 inducción.
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.9pt}
+		\fbox{\includegraphics[width=.95\textwidth]{imagenes/Imagen38.png}}
+		\caption[Modelo de red de interacción Spot42]{\textbf{Modelo de red de interacción Spot42} Se puede apreciar las 5 zonas de Spot42, donde el tamaño de estas se ve reflejado por las cantidades de interacciones sRNA-mRNA que forman, las líneas rojas punteadas representan represiones predichas por métodos bioinformáticos y las líneas rojas sólidas representan represiones identificadas por métodos empírico. Los colores de los nodos representan los valores de CAI de los mensajeros con respecto al CAI máximo y al CAI mínimo identificados en el genoma de \textit{E. coli} (0.924 valor máximo y 0.3613 valor mínimo). Para el caso de los tamaños de los mensajeros estos reflejan al tAI con respecto al máximo y mínimo identificados en \textit{E. coli} (0.3779 valor máximo y 0,1501 valor mínimo).}
+	\end{centering}	
+\end{figure}
+
+Para el caso de Spot42 (Figura 5.16), se puede observar que este sRNA está dividido en 5 zonas entre las cuales 4 realizan interacciones (S42A1, S42A2, S42A3, S42C) y 1 zona en las que no existe ningún tipo de interacción sRNA-mRNA (S42B). En el caso de las zonas que existen interacciones sRNA y mRNA, en la zona S42A3 existe la mayor cantidad de interacciones registradas para Spot42 (10 interacciones) de las cuales todas son represiones, en la zona S42A1 y S42A2 para cada uno de estos casos existen un total de 3 interacciones sRNA-mRNA para cada zona respectivamente, siendo todas estas de tipo represión y en la zona S42C solo se registra 1 interacción sRNA-mRNA que al igual que los casos anteriormente mencionados también es una represión. Cabe mencionar que existe 4 mensajeros que interaccionan con 2 zonas a la vez (2 interacciones mRNA-S42A1; S42A2 y 2 interacciones mRNA-S42A2; S42A3) y solo 1 caso en el que el mensajero interacciona con 3 zonas a la vez (galK con S42A1, S42A2 y S42A3).
+
+\subsection{Funciones Biológicas de los genes que interactúan con los módulos de los sRNAs. }
+
+Para determinar si los genes que reconocen un determinado módulo al interactuar con un sRNA se encuentran relacionados funcionalmente se decidió comparar conjunto de procesos biológicos que regulan. Se aplicó la herramienta Blast Koala tanto para todos los genes que son regulados por un mismo sRNA como para los genes que interactúan con un mismo módulo. Los resultados del primer análisis muestran que principalmente los sRNA regulan genes relacionados al procesamiento de la información ambiental, seguido de procesos celulares y procesamiento de la información genética (Figura 5.17).
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.9pt}
+		\fbox{\includegraphics[width=1\textwidth]{imagenes/Imagen39.png}}
+		\caption[Procesos biológicos asociados a los genes regulados por sRNA]{\textbf{Procesos biológicos asociados a los genes regulados por sRNA}  La figura muestra la frecuencia de los diferentes procesos biológicos en los genes regulados por sRNA que reconocen múltiples blancos. Como cada sRNA reconoce un número diferente de genes, la frecuencia de ocurrencia del proceso biológicos fue normalizada por el número total de procesos identificados en los genes regulados por un mismo sRNA.}
+	\end{centering}	
+\end{figure}
+
+Este análisis se repitió para cada uno de los genes que son reconocidos por un mismo módulo. Desde el punto de vista funcional la mayor parte de módulos interactúa con genes que participan en diferentes procesos biológicos. Solo los procesos biológicos relacionados a Metabolismo de Lípidos, Biosíntesis de Metabolitos secundarios, y Metabolismo de terpenos y poliketidos interactúan solo con un módulo, (OxyS-C2, y RygD-D) en el sRNA blanco. En el caso de genes relacionados al Metabolismo y Biosíntesis de Glicanos, el 75 \% de los módulos que regula esta función lo hace en forma exclusiva. Desde la perspectiva de los módulos, solo Spot42C, DsrA-B3 y RygD-F y H, interactúan exclusivamente con mRNAs que pertenecen a una sola función biológica. Nuestros resultados también muestran que en casi todos los sRNA existen módulos que interactúan específicamente con un conjunto de genes relacionados a un solo tipo de función biológica.  En el caso de OmrA, el módulo A1 interactúa específicamente con 3 funciones biológicas (Familia de enzimas, Sistemas del organismo, y Enfermedades humanas), mientras que el módulo A2 interactúa con genes relacionados al Metabolismo y síntesis de glicanos. 
+Para RyhB, el módulo A1 interactúa exclusivamente con dos procesos (Metabolismos y síntesis de glicanos, y Metabolismo y degradación de xenobióticos), el módulo A2 con Biosíntesis de metabolitos secundarios, y el módulo A3 con sistemas del organismo.
+En el caso de OmrB, el Módulo A1 interactúa exclusivamente con mRNAs relacionados al Metabolismo de Carbohidratos (Figura 5.18). 
+
+Los resultados anteriores muestran que en los sRNA existen módulos que reconocen específicamente mRNA asociadas a determinadas funciones biológicas. Para determinar si estos módulos también estan asociados a genes que presentan un determinado sesgo codogénico, se analizó para cada sRNA si entre los mRNA que reconocen los diferentes módulos existían valores de adaptación al uso codogénico diferentes o si presentaban una adaptación diferente al pool de tRNA. El análisis mostró que solo para RyhB y GcvB se identificaron diferencias estadísticamente significativas en los valores de adaptación al uso de codones (CAI), mientras que en la adaptación a pool de tRNA solo se identificaron diferencias estadísticamente significativas para RyhB y OxyS (Figura 5.19).
+
+\begin{landscape}
+	\begin{figure}[H]
+		\begin{centering}
+			\setlength\fboxsep{0pt}
+			\setlength\fboxrule{0.9pt}
+			\fbox{\includegraphics[width=1\textwidth]{imagenes/Imagen40.png}}
+			\caption[Funciones biológicas asociadas a los módulos. ]{\textbf{Funciones biológicas asociadas a los módulos}La figura muestra el tipo de función biológica presente en los mRNA que interactúan con los diversos módulos identificados. Los valores numéricos representan el porcentaje de mRNA que interactúan con cada módulo y que codifican para proteínas asociadas a la función biológica. Los valores fueron normalizados respecto al número total de funciones biológicas asociadas a cada módulo del sRNA. Las casillas enmarcadas en línea negra y destacadas en letras de color azul representan los procesos biológicos presentes en un solo módulo de cada sRNA.}
+		\end{centering}	
+	\end{figure}
+\end{landscape} 
+
+	\begin{figure}[H]
+		\begin{centering}
+			\setlength\fboxsep{0pt}
+			\setlength\fboxrule{0.9pt}
+			\fbox{\includegraphics[width=1\textwidth]{imagenes/Imagen41.png}}
+			\caption[Sesgo en el uso de codones en los módulos de los sRNA]{\textbf{Sesgo en el uso de codones en los módulos de los sRNA}La figura muestra los valores de CAI (Codon Adaptation Index) y tAI (tRNA Adaptation Index) de los mRNA que interactúan con los módulos de RyhB, OxyS y GcvB. Se compararon las diferencias estadísticas entre grupos usando el test Mann-Whitney no pareado.}
+		\end{centering}	
+	\end{figure}

@@ -1,0 +1,77 @@
+\select@language {spanish}
+\select@language {spanish}
+\select@language {english}
+\select@language {spanish}
+\select@language {english}
+\select@language {spanish}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Ejemplos de sRNA en \textit {Escherichia coli} y \textit {Salmonella typhimurium}}}{2}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Flujo de la informaci\'on gen\'etica desde el DNA a prote\IeC {\'\i }nas}}{4}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Esquema de la arquitectura y n\'ucleo de Cytoscape}}{7}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Representaciones de Cytoscape 3}}{8}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Ventana de Cytoscape}}{9}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Resumen de datos BSRD y SRNATarBase}}{18}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Distribuci\'on de Interacciones no caracterizadas versus Interacciones Caracterizadas}}{19}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Porcentaje de interacciones predichas y emp\IeC {\'\i }ricas en \textit {E. coli.}}}{25}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Funciones biol\'ogicas de los mRNAs regulados por sRNA}}{28}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Funciones biol\'ogicas de los mRNAs regulados por sRNA e identificados por m\'etodos bioinform\'aticos}}{29}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces An\'alisis matricial de OmrA.}}{32}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces An\'alisis matricial de RyhB.}}{33}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces An\'alisis matricial de OmrB.}}{35}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces An\'alisis matricial de GcvB.}}{36}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces An\'alisis matricial de Spot42.}}{37}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Modelo de red de interacci\'on sRNA-mRNA en \textit {E. coli}}}{48}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Modelo de red de interacci\'on de OmrA}}{49}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Modelo red Interacci\'on RyhB}}{50}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Modelo de red de interacci\'on OmrB}}{51}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Modelo de red de interacci\'on GcvB}}{52}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Modelo de red de interacci\'on Spot42}}{53}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Procesos biol\'ogicos asociados a los genes regulados por sRNA}}{55}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Funciones biol\'ogicas asociadas a los m\'odulos. }}{57}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Sesgo en el uso de codones en los m\'odulos de los sRNA}}{58}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Poster Somich 2016}}{71}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Gr\'afico OxyS}}{72}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Estructiura Secundaria OxyS}}{72}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Red Interacci\'on OxyS}}{73}
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Gr\'afico MicA}}{74}
+\contentsline {figure}{\numberline {C.5}{\ignorespaces Estructura secundaria MicA}}{74}
+\contentsline {figure}{\numberline {C.6}{\ignorespaces Red de Interacci\'on MicA}}{75}
+\contentsline {figure}{\numberline {C.7}{\ignorespaces Gr\'afico RybB}}{76}
+\contentsline {figure}{\numberline {C.8}{\ignorespaces Estructura secundaria RybB}}{76}
+\contentsline {figure}{\numberline {C.9}{\ignorespaces Red de Interacci\'on RybB}}{77}
+\contentsline {figure}{\numberline {C.10}{\ignorespaces Gr\'afico FnrS}}{78}
+\contentsline {figure}{\numberline {C.11}{\ignorespaces Estructura secundaria FnrS}}{78}
+\contentsline {figure}{\numberline {C.12}{\ignorespaces Red de Interacci\'on FnrS}}{79}
+\contentsline {figure}{\numberline {C.13}{\ignorespaces Gr\'afico DsrA}}{80}
+\contentsline {figure}{\numberline {C.14}{\ignorespaces Estructura secundaria DsrA}}{80}
+\contentsline {figure}{\numberline {C.15}{\ignorespaces Red de Interacci\'on DsrA}}{81}
+\contentsline {figure}{\numberline {C.16}{\ignorespaces Gr\'afico SgrS}}{82}
+\contentsline {figure}{\numberline {C.17}{\ignorespaces Estructura secundaria SgrS}}{82}
+\contentsline {figure}{\numberline {C.18}{\ignorespaces Red de Interacci\'on SgrS}}{83}
+\contentsline {figure}{\numberline {C.19}{\ignorespaces Gr\'afico MicC}}{84}
+\contentsline {figure}{\numberline {C.20}{\ignorespaces Estructura secundaria MicC}}{84}
+\contentsline {figure}{\numberline {C.21}{\ignorespaces Red de Interacci\'on MicC}}{85}
+\contentsline {figure}{\numberline {C.22}{\ignorespaces Gr\'afico MicF}}{86}
+\contentsline {figure}{\numberline {C.23}{\ignorespaces Estructura secundaria MicF}}{86}
+\contentsline {figure}{\numberline {C.24}{\ignorespaces Red de Interacci\'on MicF}}{87}
+\contentsline {figure}{\numberline {C.25}{\ignorespaces Gr\'afico RprA}}{88}
+\contentsline {figure}{\numberline {C.26}{\ignorespaces Estructura secundaria RprA}}{88}
+\contentsline {figure}{\numberline {C.27}{\ignorespaces Red de Interacci\'on RprA}}{89}
+\contentsline {figure}{\numberline {C.28}{\ignorespaces Gr\'afico CyaR}}{90}
+\contentsline {figure}{\numberline {C.29}{\ignorespaces Estructura secundaria CyaR}}{90}
+\contentsline {figure}{\numberline {C.30}{\ignorespaces Red de Interacci\'on CyaR}}{91}
+\contentsline {figure}{\numberline {C.31}{\ignorespaces Gr\'afico RygD}}{92}
+\contentsline {figure}{\numberline {C.32}{\ignorespaces Estructura secundaria RygD}}{92}
+\contentsline {figure}{\numberline {C.33}{\ignorespaces Red de Interacci\'on RygD}}{93}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Modelo Base de Datos}}{94}

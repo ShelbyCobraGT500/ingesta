@@ -1,0 +1,16 @@
+DAF_T718VNT_PCS = DAF_T718VNT_UDO.select(
+    DAF_T718VNT_UDO.value.substr(1,9).alias('CLI-RUT'),
+    DAF_T718VNT_UDO.value.substr(10,1).alias('CLI-RUT-DV'),
+    DAF_T718VNT_UDO.value.substr(11,2).alias('VNT-TIP'),
+    DAF_T718VNT_UDO.value.substr(13,8).alias('VNT-FEC-REG'),
+    DAF_T718VNT_UDO.value.substr(21,16).alias('VNT-VAL'),
+    DAF_T718VNT_UDO.value.substr(37,2).alias('VNT-COD-RNG'),
+    DAF_T718VNT_UDO.value.substr(39,8).alias('VNT-FEC'),
+    DAF_T718VNT_UDO.value.substr(47,8).alias('VNT-FEC-RVS'),
+    DAF_T718VNT_UDO.value.substr(55,1).alias('VNT-EST-CRF'),
+    DAF_T718VNT_UDO.value.substr(56,1).alias('VNT-EST-VCA'),
+    DAF_T718VNT_UDO.value.substr(57,12).alias('VNT-ORG-DTO'),
+    DAF_T718VNT_UDO.value.substr(69,8).alias('VNT-FEC-ACT'),
+    DAF_T718VNT_UDO.value.substr(77,9).alias('VNT-USR-ACT-NRT'),
+    DAF_T718VNT_UDO.value.substr(86,1).alias('VNT-USR-ACT-DRT'),
+)

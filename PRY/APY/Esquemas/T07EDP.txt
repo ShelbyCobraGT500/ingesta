@@ -1,0 +1,25 @@
+DAF_T107EDP_PCS = DAF_T107EDP_UDO.select(
+    DAF_T107EDP_UDO.value.substr(1,9).alias('EDP-CLI-NRT'),
+    DAF_T107EDP_UDO.value.substr(10,1).alias('EDP-CLI-DRT'),
+    DAF_T107EDP_UDO.value.substr(11,2).alias('EDP-TIP-REL'),
+    DAF_T107EDP_UDO.value.substr(13,9).alias('EDP-RLD-NRT'),
+    DAF_T107EDP_UDO.value.substr(22,1).alias('EDP-RLD-DRT'),
+    DAF_T107EDP_UDO.value.substr(23,7).alias('EDP-POR')
+    DAF_T107EDP_UDO.value.substr(30,4).alias('EDP-FEC-INI-ANO')
+    DAF_T107EDP_UDO.value.substr(34,2).alias('EDP-FEC-INI-MES')
+    DAF_T107EDP_UDO.value.substr(36,2).alias('EDP-FEC-INI-DIA')
+    DAF_T107EDP_UDO.value.substr(38,4).alias('EDP-FEC-CPT-ANO')
+    DAF_T107EDP_UDO.value.substr(42,2).alias('EDP-FEC-CPT-MES')
+    DAF_T107EDP_UDO.value.substr(44,2).alias('EDP-FEC-CPT-DIA')
+    DAF_T107EDP_UDO.value.substr(46,4).alias('EDP-FEC-ACT-ANO')
+    DAF_T107EDP_UDO.value.substr(50,2).alias('EDP-FEC-ACT-MES')
+    DAF_T107EDP_UDO.value.substr(52,2).alias('EDP-FEC-ACT-DIA')
+    DAF_T107EDP_UDO.value.substr(54,9).alias('EDP-USR-NRT')
+    DAF_T107EDP_UDO.value.substr(63,1).alias('EDP-USR-DRT')
+    DAF_T107EDP_UDO.value.substr(64,3).alias('EDP-USR-OFI')
+    DAF_T107EDP_UDO.value.substr(67,3).alias('EDP-ORI-OFI')
+    DAF_T107EDP_UDO.value.substr(70,14).alias('DB2-RID')
+    DAF_T107EDP_UDO.value.substr(84,16).alias('EDP-CPL-APR')
+    DAF_T107EDP_UDO.value.substr(99,16).alias('EDP-VAL-PCP')
+    DAF_T107EDP_UDO.RN000.substr(1,1).alias('RGL_GEN_RN000')
+)

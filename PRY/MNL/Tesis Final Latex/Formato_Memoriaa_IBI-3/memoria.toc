@@ -1,0 +1,92 @@
+\select@language {spanish}
+\select@language {spanish}
+\contentsline {chapter}{Indice de Contenidos}{\es@scroman {i}}
+\contentsline {chapter}{Indice de Figuras}{\es@scroman {iv}}
+\contentsline {chapter}{Indice de Tablas}{\es@scroman {vi}}
+\contentsline {chapter}{Resumen}{\es@scroman {viii}}
+\contentsline {chapter}{Abstract}{\es@scroman {x}}
+\select@language {english}
+\select@language {spanish}
+\select@language {english}
+\select@language {spanish}
+\contentsline {chapter}{\numberline {1}MARCO TE\'ORICO}{1}
+\contentsline {section}{\numberline {1.1}Introducci\'on}{1}
+\contentsline {subsection}{\numberline {1.1.1}Presentaci\'on del problema}{1}
+\contentsline {section}{\numberline {1.2}Marco te\'orico}{2}
+\contentsline {subsection}{\numberline {1.2.1}RNAs peque\~nos}{2}
+\contentsline {subsection}{\numberline {1.2.2}RNA mensajero (mRNA)}{3}
+\contentsline {subsubsection}{1.2.2.1 mRNA en el proceso de traducci\'on y la adaptaci\'on al uso de codones y al pool de tRNA.}{3}
+\contentsline {subsubsection}{1.2.2.2 Relaci\'on entre sRNAs, adaptaci\'on al uso codog\'enico y repertorio de tRNA}{5}
+\contentsline {subsection}{\numberline {1.2.3}Redes de Interacci\'on}{6}
+\contentsline {subsection}{\numberline {1.2.4}Cytoscape}{6}
+\contentsline {subsubsection}{1.2.4.1 Arquitectura y funcionalidad del n\'ucleo}{7}
+\contentsline {subsection}{\numberline {1.2.5}Justificaci\'on del Problema}{9}
+\contentsline {chapter}{\numberline {2}HIP\'OTESIS}{10}
+\contentsline {section}{\numberline {2.1}Hip\'otesis}{10}
+\contentsline {chapter}{\numberline {3}OBJETIVOS}{11}
+\contentsline {section}{\numberline {3.1}Objetivo}{11}
+\contentsline {section}{\numberline {3.2}Objetivos espec\IeC {\'\i }ficos}{11}
+\contentsline {chapter}{\numberline {4}MATERIALES Y M\'ETODOS}{12}
+\contentsline {section}{\numberline {4.1}Materiales}{12}
+\contentsline {subsection}{\numberline {4.1.1}Software}{12}
+\contentsline {subsection}{\numberline {4.1.2}Bases de Datos}{13}
+\contentsline {subsection}{\numberline {4.1.3}Hardware}{13}
+\contentsline {subsection}{\numberline {4.1.4}Scripts}{13}
+\contentsline {section}{\numberline {4.2}Metodolog\IeC {\'\i }a}{13}
+\contentsline {subsection}{\numberline {4.2.1}Identificaci\'on mediante b\'usqueda bibliogr\'afica de las parejas de sRNAs y mRNAs que interaccionan entre s\IeC {\'\i } en \textit {Escherichia coli}}{13}
+\contentsline {subsubsection}{4.3.1.1. Construcci\'on de base de datos.}{13}
+\contentsline {subsection}{\numberline {4.2.2}Predicci\'on e identificaci\'on de las regiones de interacci\'on entre mRNA y sRNA}{14}
+\contentsline {subsubsection}{4.2.2.1. Identificar las regiones de interacci\'on entre mRNA y sRNA}{14}
+\contentsline {subsubsection}{4.2.2.2. Predecir regiones de interacci\'on mRNA-sRNA}{14}
+\contentsline {subsubsection}{4.2.2.3. Perfiles de interacci\'on sRNA-mRNA.}{14}
+\contentsline {subsubsection}{4.2.2.4. C\'alculo de la densidad de interacci\'on en las regiones de los mensajeros}{14}
+\contentsline {subsection}{\numberline {4.2.3}Caracterizaci\'on de la adaptaci\'on al repertorio de tRNA de los genes regulados por sRNA y de sus regiones de interacci\'on}{15}
+\contentsline {subsubsection}{4.2.3.1. Determinaci\'on de la Adaptaci\'on al repertorio de tRNA }{15}
+\contentsline {subsubsection}{4.2.3.2. Determinaci\'on de la adaptaci\'on al uso codog\'enico}{16}
+\contentsline {subsubsection}{4.2.3.3. Identificaci\'on de diferencias significativas entre los distintos resultados de CAI y tAI}{16}
+\contentsline {subsubsection}{4.2.3.4. Identificaci\'on de regiones significativas (motivos) entre los mensajeros que interaccionan con los sRNAs}{16}
+\contentsline {subsection}{\numberline {4.2.4}Generaci\'on de un mapa de interacciones sRNA-mRNA que incluya la adaptaci\'on del repertorio de tRNA y uso codog\'enico del gen completo }{17}
+\contentsline {subsubsection}{4.2.4.1. Generaci\'on de red de interacci\'on}{17}
+\contentsline {chapter}{\numberline {5}Resultados}{18}
+\contentsline {section}{\numberline {5.1}OE1: Identificaci\'on mediante b\'usqueda en las bases de datos de las parejas de sRNAs y mRNA en \textit {Escherichia coli} K-12 MG1655.}{18}
+\contentsline {section}{\numberline {5.2}OE2: Identificaci\'on y predicci\'on de las regiones de interacci\'on entre mRNA y sRNA.}{23}
+\contentsline {subsection}{\numberline {5.2.1}Predicci\'on de los blancos de los sRNAs sin interacci\'on identificada.}{23}
+\contentsline {subsection}{\numberline {5.2.2}Identificaci\'on de las regiones de interacci\'on sRNA-mRNA blanco.}{24}
+\contentsline {subsection}{\numberline {5.2.3}5.2.3. Funciones biol\'ogicas reguladas por sRNA.}{27}
+\contentsline {subsection}{\numberline {5.2.4}5.2.4. Localizaci\'on de sitios de interacci\'on sRNA-mRNA en los sRNAs}{29}
+\contentsline {subsubsection}{5.2.4.1 An\'alisis de OmrA.}{30}
+\contentsline {subsubsection}{5.2.4.2 An\'alisis de RyhB.}{31}
+\contentsline {subsubsection}{5.2.4.3 An\'alisis de OmrB.}{33}
+\contentsline {subsubsection}{5.2.4.4 An\'alisis de GcvB.}{34}
+\contentsline {subsubsection}{5.2.4.5 An\'alisis de Spot42.}{34}
+\contentsline {section}{\numberline {5.3}OE3: Caracterizaci\'on de la adaptaci\'on al repertorio de tRNA de los genes regulados por sRNA y de sus regiones de interacci\'on.}{38}
+\contentsline {subsection}{\numberline {5.3.1}An\'alisis estad\IeC {\'\i }stico de los CAI y tAI de los mensajeros regulados por sRNAs.}{38}
+\contentsline {subsection}{\numberline {5.3.2}Regiones conservadas en mRNAs reconocidos por el mismo sRNA.}{40}
+\contentsline {subsubsection}{5.3.2.1. OmrA}{40}
+\contentsline {subsubsection}{5.3.2.2. RyhB}{42}
+\contentsline {subsubsection}{5.3.2.3. OmrB}{43}
+\contentsline {subsubsection}{5.3.2.4. GcvB}{44}
+\contentsline {subsubsection}{5.3.2.4. Spot42}{45}
+\contentsline {section}{\numberline {5.4}OE4: Generaci\'on de un mapa de interacciones sRNA-mRNA que incluya la adaptaci\'on del repertorio de tRNA y uso codog\'enico del gen completo y de la regi\'on de interacci\'on.}{46}
+\contentsline {subsection}{\numberline {5.4.1}Funciones Biol\'ogicas de los genes que interact\'uan con los m\'odulos de los sRNAs. }{54}
+\contentsline {chapter}{\numberline {6}Discusi\'{o}n}{59}
+\contentsline {section}{\numberline {6.1}Discusi\'on}{59}
+\contentsline {chapter}{\numberline {7}Conclusi\'{o}n}{63}
+\contentsline {section}{\numberline {7.1}Conclusi\'on}{63}
+\contentsline {chapter}{Bibliograf\'{\i }a}{64}
+\contentsline {chapter}{Anexos}{}
+\contentsline {chapter}{A:\hspace {1em}Resumen Congreso Somich Noviembre 2016}{69}
+\contentsline {chapter}{B:\hspace {1em}Poster Presentado Somich 2016}{71}
+\contentsline {chapter}{C:\hspace {1em}Gr\'aficos, Estructuras y Representaci\'on sRNAs}{72}
+\contentsline {subsection}{\numberline {C.0.1}OxyS}{72}
+\contentsline {subsection}{\numberline {C.0.2}MicA}{74}
+\contentsline {subsection}{\numberline {C.0.3}RybB}{76}
+\contentsline {subsection}{\numberline {C.0.4}FnrS}{78}
+\contentsline {subsection}{\numberline {C.0.5}DsrA}{80}
+\contentsline {subsection}{\numberline {C.0.6}SgrS}{82}
+\contentsline {subsection}{\numberline {C.0.7}MicC}{84}
+\contentsline {subsection}{\numberline {C.0.8}MicF}{86}
+\contentsline {subsection}{\numberline {C.0.9}RprA}{88}
+\contentsline {subsection}{\numberline {C.0.10}CyaR}{90}
+\contentsline {subsection}{\numberline {C.0.11}RygD}{92}
+\contentsline {chapter}{D:\hspace {1em}Modelo Base de Datos}{94}

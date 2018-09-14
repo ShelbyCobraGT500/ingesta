@@ -1,0 +1,23 @@
+DAF_T118REN_PCS = DAF_T118REN_UDO.select(
+    DAF_T118REN_UDO.value.substr(1,9).alias('REN-NRT-CLI'),
+    DAF_T118REN_UDO.value.substr(10,1).alias('REN-DRT-CLI'),
+    DAF_T118REN_UDO.value.substr(11,1).alias('TIP-REN'),
+    DAF_T118REN_UDO.value.substr(12,15).alias('VAL-REN'),
+    DAF_T118REN_UDO.value.substr(27,4).alias('FEC-REG-REN-ANO'),
+    DAF_T118REN_UDO.value.substr(31,2).alias('FEC-REG-REN-MES'),
+    DAF_T118REN_UDO.value.substr(33,2).alias('FEC-REG-REN-DIA'),
+    DAF_T118REN_UDO.value.substr(35,4).alias('FEC-CMT-ANO'),
+    DAF_T118REN_UDO.value.substr(39,2).alias('FEC-CMT-MES'),
+    DAF_T118REN_UDO.value.substr(41,2).alias('FEC-CMT-DIA'),
+    DAF_T118REN_UDO.value.substr(43,4).alias('FEC-ACT-REN-ANO'),
+    DAF_T118REN_UDO.value.substr(47,2).alias('FEC-ACT-REN-MES'),
+    DAF_T118REN_UDO.value.substr(49,2).alias('FEC-ACT-REN-DIA'),
+    DAF_T118REN_UDO.value.substr(51,9).alias('NRT-USR-ACT'),
+    DAF_T118REN_UDO.value.substr(60,1).alias('DRT-USR-ACT'),
+    DAF_T118REN_UDO.value.substr(61,12).alias('REN-ORG-DTO'),
+    DAF_T118REN_UDO.value.substr(73,1).alias('REN-IDR-VCA'),
+    DAF_T118REN_UDO.value.substr(74,2).alias('REN-RGO-REN'),
+    DAF_T118REN_UDO.value.substr(76,14).alias('DB2-RID'),
+    DAF_T118REN_UDO.value.substr(90,1).alias('REN-EST-CRF'),
+    DAF_T118REN_UDO.value.substr(91,1).alias('REN-VBD')
+)

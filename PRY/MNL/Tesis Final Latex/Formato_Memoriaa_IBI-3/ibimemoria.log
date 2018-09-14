@@ -1,0 +1,17 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdftex 2016.5.2)  6 NOV 2017 11:25
+entering extended mode
+**"C:/Users/felipe/Dropbox/Proyecto de Memoria de Titulo 2016/Tesis Final Latex
+/Formato_Memoriaa_IBI-3/ibimemoria.cls"
+
+("C:/Users/felipe/Dropbox/Proyecto de Memoria de Titulo 2016/Tesis Final Latex/
+Formato_Memoriaa_IBI-3/ibimemoria.cls"
+! Undefined control sequence.
+l.1 \NeedsTeXFormat
+                   {LaTeX2e}
+? 
+! Emergency stop.
+l.1 \NeedsTeXFormat
+                   {LaTeX2e}
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!

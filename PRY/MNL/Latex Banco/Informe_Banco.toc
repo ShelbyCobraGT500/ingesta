@@ -1,0 +1,8 @@
+\babel@toc {spanish}{}
+\babel@toc {spanish}{}
+\contentsline {section}{Control de Versiones}{2}
+\contentsline {section}{Introducci\IeC {\'o}n}{4}
+\contentsline {section}{Tendencia Lenguajes Scala \& Python}{5}
+\contentsline {subsection}{Lenguajes de programaci\IeC {\'o}n m\IeC {\'a}s demandados seg\IeC {\'u}n TIOBE}{5}
+\contentsline {subsection}{Lenguajes de programaci\IeC {\'o}n m\IeC {\'a}s utilizados seg\IeC {\'u}n GitHub}{5}
+\contentsline {subsection}{Lenguajes de programaci\IeC {\'o}n m\IeC {\'a}s populares seg\IeC {\'u}n IEEE Spectrum}{6}

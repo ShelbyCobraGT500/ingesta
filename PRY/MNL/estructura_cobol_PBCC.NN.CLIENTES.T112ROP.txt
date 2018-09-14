@@ -1,0 +1,19 @@
+PBCC.NN.CLIENTES.T112ROP
+01  DCLT112ROP.                            
+    10 ROP-COD-OPE-R        PIC X(4).      
+    10 ROP-NUM-OPE-R        PIC X(30).     
+    10 ROP-COD-REL-R        PIC X(4).      
+    10 ROP-NUM-REL-R        PIC X(30).     
+    10 ROP-TIP-REL-R        PIC X(3).      
+    10 ROP-FEC-SCRE-R       PIC X(2).      
+    10 ROP-FEC-ACRE-R       PIC X(2).      
+    10 ROP-FEC-MCRE-R       PIC X(2).      
+    10 ROP-FEC-DCRE-R       PIC X(2).      
+    10 ROP-NUM-SACT-R       PIC X(2).      
+    10 ROP-NUM-AACT-R       PIC X(2).      
+    10 ROP-NUM-MACT-R       PIC X(2).      
+    10 ROP-NUM-DACT-R       PIC X(2).      
+    10 ROP-HOR-HACT-R       PIC X(2).      
+    10 ROP-HOR-MACT-R       PIC X(2).      
+    10 ROP-HOR-SACT-R       PIC X(2).      
+    10 ROP-USR-ACTU-R       PIC X(12).     

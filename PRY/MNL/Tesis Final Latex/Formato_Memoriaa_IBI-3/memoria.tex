@@ -1,0 +1,445 @@
+%% inicio, la clase del documento es iccmemoria.cls
+\documentclass{ibimemoria}
+
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{lscape}
+%% datos generales y para la tapa
+\titulo{ESTUDIO DE LA RELACIÓN ENTRE EL USO CODOGÉNICO Y LA REGULACIÓN POR sRNA EN \textit{E. COLI} K-12 MG1655}
+\author{FELIPE Esteban Ávalos Díaz}
+\supervisor{Mario Tello Reyes}
+\informantes
+	{Omar Orellana}
+	{Gonzalo Riadi Mahias}
+\adicional{}
+\director{Wendy González Díaz}
+\date{Marzo, 2018}
+%% inicio de documento
+\begin{document}
+
+%% crea la tapa
+\maketitle
+%% indices
+\tableofcontents
+\listoffigures
+\listoftables
+
+%% resumen
+\begin{resumen}
+\input {cap/resumen.tex}			%Introduccion
+\end{resumen}
+
+%% abstract
+\begin{abstract}
+\input {cap/abstract.tex}
+\end{abstract}
+
+%capitulos de la memoria
+\input {cap/cap_01.tex}			%Marco Teórico
+\input {cap/cap_03.tex}			%Hipótesis
+\input {cap/cap_02.tex}			%Objetivos
+\input {cap/cap_04.tex}			%Materiales y Métodos
+\input {cap/cap_05.tex}			%Resultados
+\input {cap/cap_06.tex}			%Discusión
+\input {cap/cap_07.tex}			%Conclusión
+%\input {cap/Bib.tex}			%Bib
+%\input {cap/cap_n.tex}      %De esta forma se pueden agregar tantos capítulos como sean necesarios
+
+
+%%% ambiente glosario
+%\begin{glosario}
+%  \item[El primer término:] Este es el significado del primer término, realmente no se bien lo que significa pero podría haberlo averiguado si hubiese tenido un poco mas de tiempo.
+%  \item[El segundo término:] Este si se lo que significa pero me da lata escribirlo...
+%\end{glosario}
+
+
+%% genera las referencias
+%\nocite{*}
+\bibliography{bib/b1}
+
+
+%% comienzo de la parte de anexos
+\appendixpart
+
+%% contenido del primer anexo
+\appendix{Resumen Congreso Somich Noviembre 2016}
+Caracterización de red de interacciones sRNA-mRNA en Escherichia coli K12 MG1655\\
+
+Autores: Felipe Ávalos Díaz\textsuperscript{1}, Juan Pablo Maldonado\textsuperscript{2}, Mario Tello Reyes\textsuperscript{1}, Omar Orellana\textsuperscript{2}\\
+
+1: Laboratorio de Metagenómica Bacteriana, Centro de Biotecnología Acuícola, Facultad de Química y Biología, Universidad de Santiago de Chile.\\
+
+2: Laboratorio de Biología Molecular Bacteriana, Instituto de Ciencias Biomédicas, Facultad de Medicina, Universidad de Chile.\\
+
+Introducción: Los sRNA son un tipo de ncRNA (RNA no codificante) en donde el tamaño característico va desde los 50 a 500 nucleótidos de longitud y por lo general son dependientes de la proteína Hfq. El efecto de la unión sRNA-mRNA puede ser de inducción y represión dependiendo de la zona en donde el sRNA está interactuando con el mRNA. Un mismo sRNA pude ser inductor de la traducción de un mRNA específico y la represión de la traducción de otro mRNA de forma simultánea. En el caso de los mRNA están divididos en zonas las cuales son 5'UTR, Zona Codificante y 3'UTR, pero en el caso de los sRNA no se ha determinado una forma de dividir su estructura en zonas de interés, lo cual nos lleva a preguntarnos si existe algún modo de identificar zonas en el sRNA.\\
+ 
+Hipótesis: Los sRNAs están divididos en zonas que interactúan específicamente con un conjunto de mRNAs con la finalidad de regular la traducción de este.
+Metodología: Se recopilo la información obtenidas en las bases de datos sRNATarBAse y la base de datos BSRD, la cual posteriormente se complementó con las predicciones de IntaRNA para las interacciones que no poseían lugar de interaccion en el sRNA. Posteriormente se tomaron los datos de las posiciones de interaccion con el sRNA para ejecutar un script que crea una matriz con las posiciones de interaccion, posteriormente la matriz se graficó por medio de Microsoft Excel para posteriormente proceder a identificar las zonas del sRNA.\\
+
+Resultados: Se identificó que los sRNAs están organizados en forma modular con zonas que interactúan específicamente con un conjunto de mRNAs. Se identificó que en los sRNAs existen entre 2 a 6 zonas. De un total de 18 sRNAs analizados que dan cuenta de 167 interacciones equivalentes a un 38,30\% del total de interacciones identificadas, se identificó que los sRNAs con tres zonas son los más comunes de las 18 interacciones estudiadas con un total de 8 interacciones que equivale a un 44.4\% del total. En el caso de SPOT42 se identificaron 5 zonas de la cual la zona S42A3 interactúa principalmente con la región codificante de los mensajeros, mientras que en el resto de las zonas interactúan principalmente con la región 5'UTR.\\
+
+Conclusión: Por medio del estudio de los resultados se lograron identificar zonas en los sRNA que son altamente utilizadas para las interacciones con mRNA, como también se han identificado zonas en las cuales no hay existencia de interacciones con mRNA y que posiblemente tengan un rol estructural para la determinación de la estructura del sRNA.\\
+
+Financiamiento: Proyecto Fondecyt 1150834
+
+
+%% contenido del segundo anexo
+\appendix{Poster Presentado Somich 2016}
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=0.72\textwidth]{imagenes/Poster_Somich_2016.png}}
+		\caption[Poster Somich 2016]{Poster Presentado en la Somich, Valdivia 2016}
+	\end{centering}	
+\end{figure}
+
+\appendix{Gráficos, Estructuras y Representación sRNAs}
+\subsection{OxyS}
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=0.65\textwidth]{imagenes/OxyS.png}}
+		\caption[Gráfico OxyS]{Gráfico de la Estructura OxyS}
+	\end{centering}	
+\end{figure}
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=0.70\textwidth]{imagenes/OxyS_sec.png}}
+		\caption[Estructiura Secundaria OxyS]{Estructura Secundaria se OxyS, con sus zonas de interacción definidas}
+	\end{centering}	
+\end{figure}
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=1\textwidth]{imagenes/OxyS_red.png}}
+		\caption[Red Interacción OxyS]{Modelo de red de interacción OxyS}
+	\end{centering}	
+\end{figure}
+
+\newpage
+
+\subsection{MicA}
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=1\textwidth]{imagenes/MicA.png}}
+		\caption[Gráfico MicA]{Gráfico de la Estructura MicA.}
+	\end{centering}	
+\end{figure}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=1\textwidth]{imagenes/MicA_sec.png}}
+		\caption[Estructura secundaria MicA]{Estructura Secundaria MicA, con sus zonas de interacción definidas.}
+	\end{centering}	
+\end{figure}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=1\textwidth]{imagenes/MicA_red.png}}
+		\caption[Red de Interacción MicA]{Modelo de red de Interacción MicA.}
+	\end{centering}	
+\end{figure}
+
+\newpage
+\subsection{RybB}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=1\textwidth]{imagenes/RybB.png}}
+		\caption[Gráfico RybB]{Gráfico de la Estructura RybB.}
+	\end{centering}	
+\end{figure}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=1\textwidth]{imagenes/RybB_sec.png}}
+		\caption[Estructura secundaria RybB]{Estructura Secundaria RybB, con sus zonas de interacción definidas.}
+	\end{centering}	
+\end{figure}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=1\textwidth]{imagenes/RybB_red.png}}
+		\caption[Red de Interacción RybB]{Modelo de red de Interacción RybB.}
+	\end{centering}	
+\end{figure}
+
+\newpage
+
+\subsection{FnrS}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=1\textwidth]{imagenes/FnrS.png}}
+		\caption[Gráfico FnrS]{Gráfico de la Estructura FnrS.}
+	\end{centering}	
+\end{figure}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=.85\textwidth]{imagenes/FnrS_sec.png}}
+		\caption[Estructura secundaria FnrS]{Estructura Secundaria FnrS, con sus zonas de interacción definidas.}
+	\end{centering}	
+\end{figure}
+
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=1\textwidth]{imagenes/FnrS_red.png}}
+		\caption[Red de Interacción FnrS]{Modelo de red de Interacción FnrS.}
+	\end{centering}	
+\end{figure}
+
+\newpage
+\subsection{DsrA}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=1\textwidth]{imagenes/DsrA.png}}
+		\caption[Gráfico DsrA]{Gráfico de la Estructura DsrA.}
+	\end{centering}	
+\end{figure}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=.7\textwidth]{imagenes/DsrA_sec.png}}
+		\caption[Estructura secundaria DsrA]{Estructura Secundaria DsrA, con sus zonas de interacción definidas.}
+	\end{centering}	
+\end{figure}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=1\textwidth]{imagenes/DsrA_red.png}}
+		\caption[Red de Interacción DsrA]{Modelo de red de Interacción DsrA.}
+	\end{centering}	
+\end{figure}
+
+\newpage
+
+\subsection{SgrS}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=1\textwidth]{imagenes/SgrS.png}}
+		\caption[Gráfico SgrS]{Gráfico de la Estructura SgrS.}
+	\end{centering}	
+\end{figure}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=0.7\textwidth]{imagenes/SgrS_sec.png}}
+		\caption[Estructura secundaria SgrS]{Estructura Secundaria SgrS, con sus zonas de interacción definidas.}
+	\end{centering}	
+\end{figure}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=1\textwidth]{imagenes/SgrS_red.png}}
+		\caption[Red de Interacción SgrS]{Modelo de red de Interacción SgrS.}
+	\end{centering}	
+\end{figure}
+
+\newpage
+
+\subsection{MicC}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=1\textwidth]{imagenes/MicC.png}}
+		\caption[Gráfico MicC]{Gráfico de la Estructura MicC.}
+	\end{centering}	
+\end{figure}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=.9\textwidth]{imagenes/MicC_sec.png}}
+		\caption[Estructura secundaria MicC]{Estructura Secundaria MicC, con sus zonas de interacción definidas.}
+	\end{centering}	
+\end{figure}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=1\textwidth]{imagenes/MicC_red.png}}
+		\caption[Red de Interacción MicC]{Modelo de red de Interacción MicC.}
+	\end{centering}	
+\end{figure}
+\newpage
+
+\subsection{MicF}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=1\textwidth]{imagenes/MicF.png}}
+		\caption[Gráfico MicF]{Gráfico de la Estructura MicF.}
+	\end{centering}	
+\end{figure}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=.9\textwidth]{imagenes/MicF_sec.png}}
+		\caption[Estructura secundaria MicF]{Estructura Secundaria MicF, con sus zonas de interacción definidas.}
+	\end{centering}	
+\end{figure}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=1\textwidth]{imagenes/MicF_red.png}}
+		\caption[Red de Interacción MicF]{Modelo de red de Interacción MicF.}
+	\end{centering}	
+\end{figure}
+
+\newpage
+
+\subsection{RprA}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=1\textwidth]{imagenes/RprA.png}}
+		\caption[Gráfico RprA]{Gráfico de la Estructura RprA.}
+	\end{centering}	
+\end{figure}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=1\textwidth]{imagenes/RprA_sec.png}}
+		\caption[Estructura secundaria RprA]{Estructura Secundaria RprA, con sus zonas de interacción definidas.}
+	\end{centering}	
+\end{figure}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=1\textwidth]{imagenes/RprA_red.png}}
+		\caption[Red de Interacción RprA]{Modelo de red de Interacción RprA.}
+	\end{centering}	
+\end{figure}
+
+\newpage
+
+\subsection{CyaR}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=1\textwidth]{imagenes/CyaR.png}}
+		\caption[Gráfico CyaR]{Gráfico de la Estructura CyaR.}
+	\end{centering}	
+\end{figure}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=.9\textwidth]{imagenes/CyaR_sec.png}}
+		\caption[Estructura secundaria CyaR]{Estructura Secundaria CyaR, con sus zonas de interacción definidas.}
+	\end{centering}	
+\end{figure}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=1\textwidth]{imagenes/CyaR_red.png}}
+		\caption[Red de Interacción CyaR]{Modelo de red de Interacción CyaR.}
+	\end{centering}	
+\end{figure}
+
+\newpage
+
+\subsection{RygD}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=1\textwidth]{imagenes/RygD.png}}
+		\caption[Gráfico RygD]{Gráfico de la Estructura RygD.}
+	\end{centering}	
+\end{figure}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=.75\textwidth]{imagenes/RygD_sec.png}}
+		\caption[Estructura secundaria RygD]{Estructura Secundaria RygD, con sus zonas de interacción definidas.}
+	\end{centering}	
+\end{figure}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=1\textwidth]{imagenes/RygD_red.png}}
+		\caption[Red de Interacción RygD]{Modelo de red de Interacción RygD.}
+	\end{centering}	
+\end{figure}
+
+\appendix{Modelo Base de Datos}
+
+\begin{figure}[H]
+	\begin{centering}
+		\setlength\fboxsep{0pt}
+		\setlength\fboxrule{0.5pt}
+		\fbox{\includegraphics[width=1\textwidth]{imagenes/Base_de_Datos.png}}
+		\caption[Modelo Base de Datos]{Modelo de la Base de Datos Creado en Mysql Workbench.}
+	\end{centering}	
+\end{figure}
+
+%% fin
+\end{document}
+
+   
